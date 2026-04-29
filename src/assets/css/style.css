@@ -1,0 +1,1498 @@
+#header {
+    z-index: 9999;
+}
+#header .pcHeader {
+    background: rgba(31, 24, 16, 0.9);
+}
+#header .pcHeader .head {
+}
+#header .pcHeader .head .logo {
+}
+#header .pcHeader .head .gnb {
+    margin-left: auto;
+}
+#header .pcHeader .head .gnb .gnbLst {
+}
+#header .pcHeader .head .gnb .gnbLst .gnbLink {
+    padding: 3rem;
+    display: inline-block;
+}
+
+#header .pcHeader .head .lnb {
+    width: 15rem;
+    border-radius: 0.5rem;
+    background: #554534;
+    top: calc(100% - 1.4rem);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+#header .pcHeader .head .lnb.on {
+    max-height: 30rem;
+    opacity: 1;
+    padding: 1rem 0;
+}
+
+#header .pcHeader .head .lnb .lnbLst {
+}
+#header .pcHeader .head .lnb .lnbLst a {
+    display: block;
+    text-align: center;
+    padding: 0.8rem 0;
+}
+#header .pcHeader .head .lnb .lnbLst a:hover {
+    font-weight: 500;
+}
+#header .pcHeader .head .menuBtn {
+}
+
+#header .pcHeader.on {
+    background: rgba(31, 24, 16, 0.95);
+}
+#header .pcHeader.on .head .gnb {
+    opacity: 0;
+}
+
+#header .pcHeader .entire {
+    background: rgba(31, 24, 16, 0.95);
+    height: calc(100% - 9rem);
+}
+#header .pcHeader .entire::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30rem;
+    height: 36rem;
+    background: url("../img/head_entire_bg.png");
+    right: 0;
+    bottom: 0;
+}
+#header .pcHeader .entire .inn {
+}
+#header .pcHeader .entire .gnb {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 6.5rem;
+}
+#header .pcHeader .entire .gnb .gnbLst {
+    width: 30.4rem;
+    left: -2rem;
+    opacity: 0;
+    transition: 0.2s;
+}
+#header .pcHeader .entire .gnb .gnbLst .tit {
+    padding: 3rem 0;
+    display: block;
+}
+#header .pcHeader .entire .lnb {
+}
+#header .pcHeader .entire .lnb li {
+}
+#header .pcHeader .entire .lnb li a {
+    display: block;
+    padding: 1.5rem 0;
+    opacity: 0.8;
+}
+#header .pcHeader .entire .lnb li a:hover {
+    opacity: 1;
+}
+
+#header .pcHeader .entire .gnb .gnbLst.on {
+    left: 0;
+    opacity: 1;
+}
+
+@media all and (max-width: 880px) {
+    #header {
+    }
+    #header .moHeader {
+        background: rgba(31, 24, 16, 0.9);
+    }
+    #header .moHeader .head {
+        max-width: var(--innerMo);
+        padding: 2rem 0;
+    }
+    #header .moHeader .head .logo {
+        width: 32.5rem;
+    }
+    #header .moHeader .head .menuBtn {
+        width: 6rem;
+    }
+
+    #header .moHeader .menuBox {
+        height: calc(100% - 10rem);
+        background: #fff;
+    }
+    #header .moHeader .menuBox .gnb {
+        width: var(--innerMo);
+        margin: 0 auto;
+    }
+    #header .moHeader .menuBox .gnb .gnbLst {
+        bottom: -3rem;
+        opacity: 0;
+        transition: 0.4s;
+    }
+    #header .moHeader .menuBox .gnb .gnbLst .tit {
+        padding: 3.2rem 1rem;
+        border-bottom: 1px solid #cccccc;
+    }
+    #header .moHeader .menuBox .gnb .gnbLst .tit::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 3.5rem;
+        height: 3.5rem;
+        background: url("../img/ic_moHead_arr.svg") center/contain;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.2s;
+    }
+
+    .lnb-wrap {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    .lnb-wrap.on {
+        max-height: 40rem;
+    }
+
+    #header .moHeader .menuBox .lnb {
+        padding: 1rem 0;
+    }
+    #header .moHeader .menuBox .lnb .lnbLst {
+    }
+    #header .moHeader .menuBox .lnb .lnbLst a {
+        display: block;
+        padding: 1.55rem 1rem;
+    }
+
+    #header .moHeader .menuBox .gnb .gnbLst.act {
+        bottom: 0;
+        opacity: 1;
+    }
+    #header .moHeader .menuBox .gnb .gnbLst.on .tit::before {
+        transform: translateY(-50%) scaleY(-1);
+    }
+}
+
+#float {
+    right: 5rem;
+    bottom: 7rem;
+    z-index: 9998;
+    align-items: flex-end;
+}
+#float .flst {
+    margin-bottom: 1.6rem;
+}
+#float .flst .lst {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 0;
+    transition: all 0.5s ease;
+}
+#float .flst .lst + .lst {
+    margin-top: 0.7rem;
+}
+#float .flst .lst a {
+    background: #a28362;
+    border-radius: 5rem;
+    gap: 0.9rem;
+    padding: 1.2rem 2.2rem;
+}
+#float .flst .lst a img {
+}
+#float .fBtn {
+    background: #e3b88a;
+    border: 1px solid #e3b88a;
+    width: 7.4rem;
+    height: 7.4rem;
+    border-radius: 50%;
+    transition: 0.1s;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+#float .fBtn img {
+    width: 4rem;
+    transition: 0.2s;
+}
+#float .ftop {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    width: 7.4rem;
+    height: 7.4rem;
+    border-radius: 50%;
+    margin-top: 1.2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+#float .ftop img {
+    width: 4rem;
+}
+
+#float .flst.on .lst {
+    max-height: 10rem;
+    opacity: 1;
+}
+
+#float .fBtn.on {
+    background: #a28362;
+    border: 1px solid #a28362;
+}
+#float .fBtn.on img {
+    transform: rotate(90deg);
+}
+
+@media all and (max-width: 880px) {
+    #float {
+    }
+    #float .flst {
+    }
+    #float .flst .lst {
+    }
+    #float .flst .lst + .lst {
+    }
+    #float .flst .lst a {
+        font-size: 2.2rem;
+    }
+    #float .flst .lst a img {
+        width: 3rem;
+    }
+    #float .fBtn {
+    }
+    #float .fBtn img {
+    }
+    #float .ftop {
+    }
+    #float .ftop img {
+    }
+}
+
+#footer {
+    background: #201c16;
+}
+#footer .inner {
+    padding: 3rem 0 4.5rem;
+}
+#footer .menuArea {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 4rem;
+}
+#footer .menuArea .menu {
+    gap: 3.2rem;
+}
+#footer .menuArea .menu li {
+}
+#footer .menuArea .menu li a {
+    opacity: 0.8;
+}
+#footer .menuArea .link {
+}
+#footer .menuArea .link a {
+    gap: 0.7rem;
+    opacity: 0.9;
+}
+#footer .infoArea {
+}
+#footer .infoArea .ftlogo {
+    width: 30rem;
+}
+#footer .infoArea .infoA {
+    z-index: 1;
+}
+#footer .infoArea .infoA .tit {
+}
+#footer .infoArea .infoA .num {
+}
+#footer .infoArea .infoA .prg {
+    opacity: 0.8;
+    padding-top: 0.5rem;
+}
+#footer .infoArea .infoB {
+    padding-top: 3rem;
+    opacity: 0.8;
+}
+#footer .infoArea .infoB .lst {
+    gap: 2.2rem;
+}
+#footer .infoArea .infoB .lst li {
+}
+#footer .infoArea .infoB .copy {
+    padding-top: 0.8rem;
+}
+
+@media all and (max-width: 880px) {
+    #footer {
+    }
+    #footer .inner {
+        max-width: var(--innerMo);
+        padding: 6rem 0 4rem;
+    }
+    #footer .menuArea {
+        padding-bottom: 2rem;
+        margin-bottom: 4rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #footer .menuArea .menu {
+        font-size: 2.2rem;
+    }
+    #footer .menuArea .menu li {
+    }
+    #footer .menuArea .menu li a {
+    }
+    #footer .menuArea .link {
+        font-size: 2.2rem;
+    }
+    #footer .menuArea .link a {
+        padding: 0.9rem;
+    }
+    #footer .menuArea .link a img {
+        width: 1.8rem;
+    }
+    #footer .infoArea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #footer .infoArea .ftlogo {
+        width: 36.4rem;
+    }
+    #footer .infoArea .infoA {
+        position: relative;
+        padding-top: 5rem;
+    }
+    #footer .infoArea .infoA .tit {
+        font-size: 2.2rem;
+    }
+    #footer .infoArea .infoA .num {
+        font-size: 3rem;
+    }
+    #footer .infoArea .infoA .prg {
+        font-size: 2.2rem;
+        padding-top: 1.2rem;
+    }
+    #footer .infoArea .infoB {
+        padding-top: 5rem;
+    }
+    #footer .infoArea .infoB .lst {
+        font-size: 2.2rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    #footer .infoArea .infoB .lst li {
+    }
+    #footer .infoArea .infoB .copy {
+        font-size: 2.2rem;
+        padding-top: 1.5rem;
+    }
+}
+
+#subVisual {
+}
+#subVisual .bgImg {
+}
+#subVisual .txtArea {
+    bottom: 19rem;
+}
+#subVisual .txtArea .tit {
+    padding-bottom: 1.6rem;
+}
+#subVisual .txtArea .wrt {
+}
+#subVisual .menuArea {
+    gap: 0.7rem;
+    bottom: 0;
+}
+#subVisual .menuArea .menu {
+    width: 100%;
+}
+#subVisual .menuArea .menu a {
+    display: block;
+    text-align: center;
+    padding: 1.8rem 0;
+    background: #f0f0f0;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+#subVisual .menuArea .menu a:hover {
+    font-weight: bold;
+    color: var(--fc2);
+}
+#subVisual .menuArea .menu.on a {
+    pointer-events: none;
+    cursor: default;
+    font-weight: bold;
+    color: #fff;
+    background: var(--fc2) url("../img/sub/menu_bg_ico.png") right 0.1rem bottom / 6.9rem 5.6rem
+        no-repeat;
+}
+
+@media all and (max-width: 880px) {
+    #subVisual {
+    }
+    #subVisual .bgImg {
+    }
+    #subVisual .txtArea {
+        text-align: center;
+        bottom: 16.2rem;
+    }
+    #subVisual .txtArea .tit {
+        font-size: 4.2rem;
+    }
+    #subVisual .txtArea .wrt {
+        font-size: 2.8rem;
+    }
+    #subVisual .menuArea {
+        gap: 0.5rem;
+        font-size: 2.4rem;
+    }
+    #subVisual .menuArea .menu {
+    }
+    #subVisual .menuArea .menu a {
+    }
+    #subVisual .menuArea .menu.on a {
+    }
+}
+
+#contents {
+    padding: 10rem 0 15rem;
+}
+#contents .subTitle {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 7rem;
+}
+#contents .subTitle .title {
+}
+#contents .subTitle .menu {
+    gap: 1rem;
+}
+
+@media all and (max-width: 880px) {
+    #contents {
+        max-width: var(--innerMo);
+    }
+    #contents .subTitle {
+    }
+    #contents .subTitle .title {
+        font-size: 4rem;
+    }
+    #contents .subTitle .menu {
+        font-size: 2.2rem;
+    }
+    #contents .subTitle .menu img {
+        width: 1.8rem;
+    }
+}
+
+#reserv {
+}
+#reserv .guidePanel {
+    margin-bottom: 8rem;
+}
+#reserv .guideBox {
+}
+#reserv .guideBox + .guideBox {
+    margin-top: 6rem;
+}
+#reserv .guideBox .tit {
+    margin-bottom: 3rem;
+    padding-left: 1.4rem;
+}
+#reserv .guideBox .tit::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.4rem;
+    height: 2.2rem;
+    background: var(--fc2);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#reserv .guideBox .txts {
+    background: #f4f4f4;
+    padding: 3.6rem 4rem;
+}
+#reserv .guideBox .txts .lst {
+}
+#reserv .guideBox .txts .lst li {
+    padding-left: 1.4rem;
+}
+#reserv .guideBox .txts .lst li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: var(--fc2);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#reserv .guideBox .txts .lst li + li {
+    margin-top: 0.8rem;
+}
+#reserv .guideBox .txts .prg {
+    padding-bottom: 1.2rem;
+}
+#reserv .guideBox .txts .wrt {
+    line-height: 1.8;
+}
+
+@media all and (max-width: 880px) {
+    #reserv {
+    }
+    #reserv .guidePanel {
+    }
+    #reserv .guideBox {
+    }
+    #reserv .guideBox + .guideBox {
+    }
+    #reserv .guideBox .tit {
+        font-size: 3.4rem;
+    }
+    #reserv .guideBox .txts {
+    }
+    #reserv .guideBox .txts .lst {
+        font-size: 2.6rem;
+    }
+    #reserv .guideBox .txts .lst li::before {
+        transform: none;
+        top: 1.7rem;
+    }
+    #reserv .guideBox .txts .prg {
+        font-size: 2.6rem;
+    }
+    #reserv .guideBox .txts .wrt {
+        font-size: 2.4rem;
+    }
+}
+
+#reserv .searchBar {
+    background: #f4f4f4;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    margin: 10rem 0 3rem;
+}
+#reserv .searchBar .filterArea {
+    gap: 3.5rem;
+}
+#reserv .searchBar .filterArea .filtOpt {
+    gap: 2rem;
+}
+#reserv .searchBar .filterArea .filtOpt .tit {
+    flex-shrink: 0;
+}
+#reserv .searchBar .filterArea .filtOpt .area {
+    gap: 0.6rem;
+}
+#reserv .searchBar .filterArea .filtOpt .area1 {
+    width: 33.1rem;
+}
+#reserv .searchBar .filterArea .filtOpt .area2 {
+    width: 36.2rem;
+}
+#reserv .searchBar .filterArea .filtOpt .slc {
+    height: 5rem;
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid #cccccc;
+    padding: 0 1.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url("../img/sub/ic_slc_arr.svg") right 1.5rem center / 2rem 2rem no-repeat;
+}
+#reserv .searchBar .filterArea .filtOpt .slc::placeholder {
+    color: #797979;
+}
+#reserv .searchBar .filterArea .filtOpt .ipt {
+    height: 5rem;
+    background: #fff;
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid #cccccc;
+    padding: 0 1.5rem;
+}
+#reserv .searchBar .filterArea .filtOpt .ipt::placeholder {
+    color: #797979;
+}
+#reserv .searchBar .btnArea {
+    gap: 0.5rem;
+    margin-left: auto;
+    font-weight: 500;
+}
+#reserv .searchBar .btnArea .btn {
+    gap: 0.8rem;
+    width: 10.5rem;
+    font-family: inherit;
+    border-radius: 0.5rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    justify-content: center;
+}
+#reserv .searchBar .btnArea .btnA {
+    background: var(--fc2);
+}
+#reserv .searchBar .btnArea .btnB {
+    background: var(--fc3);
+}
+
+@media all and (max-width: 880px) {
+    #reserv .searchBar {
+        flex-direction: column;
+        padding: 3rem;
+        gap: 3rem;
+    }
+    #reserv .searchBar .filterArea {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+    #reserv .searchBar .filterArea .filtOpt {
+        gap: 0;
+    }
+    #reserv .searchBar .filterArea .filtOpt .tit {
+        font-size: 2.2rem;
+        min-width: 13rem;
+    }
+    #reserv .searchBar .filterArea .filtOpt .area {
+        width: 100%;
+    }
+    #reserv .searchBar .filterArea .filtOpt .slc {
+        height: 5.5rem;
+        font-size: 2rem;
+    }
+    #reserv .searchBar .filterArea .filtOpt .ipt {
+        height: 5.5rem;
+        font-size: 2rem;
+    }
+    #reserv .searchBar .btnArea {
+        margin: 0;
+        gap: 1rem;
+    }
+    #reserv .searchBar .btnArea .btn {
+        font-size: 2.2rem;
+        width: auto;
+        padding: 1.1rem 2rem;
+    }
+    #reserv .searchBar .btnArea .btn img {
+        width: 1.8rem;
+    }
+}
+
+#reserv .reservTableWrap {
+}
+#reserv .reservTable {
+}
+#reserv .reservTable thead {
+}
+#reserv .reservTable tbody {
+}
+#reserv .reservTable tr {
+}
+#reserv .reservTable tr:hover {
+    background: #f9f9f9;
+}
+#reserv .reservTable th {
+    background: #fdfaf4;
+    padding: 1.6rem 0;
+    border: 1px solid #e0e0e0;
+    border-top: 1px solid #333333;
+    font-weight: 500;
+}
+#reserv .reservTable td {
+    padding: 1.25rem 0;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+#reserv .reservTable td.num {
+    width: 10rem;
+}
+#reserv .reservTable td.subj {
+    width: auto;
+    text-align: left;
+    padding: 0 2rem;
+}
+#reserv .reservTable td.period {
+    width: 36rem;
+}
+#reserv .reservTable td.date {
+    width: 16rem;
+}
+#reserv .reservTable td.state {
+    width: 16rem;
+    font-size: 1.6rem;
+}
+#reserv .reservTable td.state > span {
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.2rem;
+}
+#reserv .reservTable td.state .st01 {
+    color: #333;
+    background: #e0e0e0;
+}
+#reserv .reservTable td.state .st02 {
+    color: #fff;
+    background: #a28362;
+}
+#reserv .reservTable td.state .st03 {
+    color: #fff;
+    background: #333333;
+}
+#reserv .reservTable td.view {
+    width: 16rem;
+    font-size: 1.6rem;
+}
+#reserv .reservTable td.view a {
+    display: inline-block;
+    border: 1px solid #555555;
+    background: #f4f4f4 url("../img/sub/ic_reserv_more.svg") right 1.1rem center / 1.4rem 1.4rem
+        no-repeat;
+    border-radius: 0.5rem;
+    padding: 0.4rem 3rem 0.4rem 1.3rem;
+}
+
+#reserv .reservTable th:first-child,
+#reserv .reservTable td:first-child {
+    border-left: 0;
+}
+#reserv .reservTable th:last-child,
+#reserv .reservTable td:last-child {
+    border-right: 0;
+}
+
+@media all and (max-width: 880px) {
+    #reserv .reservTableWrap {
+        overflow-x: auto;
+        padding-bottom: 3rem;
+        scrollbar-width: thin;
+        scrollbar-color: #888 transparent;
+    }
+    #reserv .reservTableWrap::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        -webkit-appearance: none;
+    }
+    #reserv .reservTableWrap::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    #reserv .reservTableWrap::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    #reserv .reservTable {
+        min-width: 162rem;
+        font-size: 2.4rem;
+    }
+    #reserv .reservTable thead {
+    }
+    #reserv .reservTable tbody {
+    }
+    #reserv .reservTable tr {
+    }
+    #reserv .reservTable th {
+        padding: 1.2rem 0;
+    }
+    #reserv .reservTable td {
+        padding: 1.7rem 0;
+    }
+    #reserv .reservTable td.num {
+    }
+    #reserv .reservTable td.subj {
+    }
+    #reserv .reservTable td.period {
+        width: 43rem;
+    }
+    #reserv .reservTable td.date {
+    }
+    #reserv .reservTable td.state {
+        font-size: 2.2rem;
+    }
+    #reserv .reservTable td.view {
+        font-size: 2.2rem;
+    }
+    #reserv .reservTable td.view a {
+        background-size: 1.6rem 1.6rem;
+    }
+}
+
+#reserv .rsvTit {
+    margin-bottom: 3rem;
+    padding-left: 1.4rem;
+}
+#reserv .rsvTit::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.4rem;
+    height: 2.2rem;
+    background: var(--fc2);
+    left: 0;
+    top: 1rem;
+}
+
+#reserv .reservGrid {
+    border: 1px solid #333333;
+    border-right: 0;
+    border-left: 0;
+}
+#reserv .reservGrid + .reservGrid {
+    margin-top: 4rem;
+}
+#reserv .reservGrid .gridLine {
+    display: flex;
+    flex-shrink: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+#reserv .reservGrid .gridLine .opt {
+    width: 20rem;
+    text-align: center;
+    font-weight: 500;
+    min-height: 8.5rem;
+    background: #fdfaf4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 0.5rem;
+}
+#reserv .reservGrid .gridLine .opt i {
+    color: #e51e1e;
+}
+#reserv .reservGrid .gridLine .con {
+    padding: 1.6rem 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#reserv .reservGrid .gridLine .con .downBtn {
+    text-decoration: underline;
+}
+#reserv .reservGrid .gridLine .txtBtnGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+#reserv .reservGrid .gridLine .txtBtn {
+    padding: 0.3rem 1.3rem;
+    display: inline-flex;
+    background: #f4f4f4;
+    border: 1px solid #555555;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    font-size: 1.6rem;
+    align-items: center;
+}
+#reserv .reservGrid .gridLine .stateGroup {
+}
+#reserv .reservGrid .gridLine .stateGroup .line {
+    display: flex;
+    gap: 1rem;
+}
+#reserv .reservGrid .gridLine .stateGroup .line .state {
+    font-size: 1.6rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+}
+#reserv .reservGrid .gridLine .stateGroup .line .state.typeA {
+    background: var(--fc2);
+    color: #fff;
+}
+#reserv .reservGrid .gridLine .stateGroup .line .state.typeB {
+    background: #e0e0e0;
+    color: #333;
+}
+#reserv .reservGrid .gridLine .stateGroup .prg {
+    margin-top: 0.7rem;
+}
+
+#reserv .reservGrid .gridLine.w100 {
+    width: 100%;
+}
+#reserv .reservGrid .gridLine.w50 {
+    width: 50%;
+}
+#reserv .reservGrid .gridLine .opt.opt170 {
+    width: 17rem;
+    min-height: 6rem;
+}
+
+#reserv .reservGrid .gridLine .iptLine {
+}
+#reserv .reservGrid .gridLine .iptLine .ipt {
+    height: 4.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 0.5rem;
+    color: #212121;
+    line-height: 1.2;
+    padding: 0 1.5rem;
+    width: 100%;
+    font-size: 1.6rem;
+}
+#reserv .reservGrid .gridLine .iptLine .ipt:focus-visible {
+    border: 1px solid #4f4f51;
+    outline: none;
+}
+#reserv .reservGrid .gridLine .iptLine .slc {
+    height: 4.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 0.5rem;
+    color: #212121;
+    line-height: 1.2;
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../img/sub/ic_slc_arr.svg") right 1.5rem center / 2rem 2rem no-repeat;
+}
+#reserv .reservGrid .gridLine .iptLine .slc:focus-visible {
+    border: 1px solid #4f4f51;
+    outline: none;
+}
+#reserv .reservGrid .gridLine .iptLine .dash {
+    font-size: 1.6rem;
+}
+
+#reserv .reservGrid .gridLine .phoneLine {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 57rem;
+}
+#reserv .reservGrid .gridLine .adrsLine {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.2rem 0;
+}
+#reserv .reservGrid .gridLine .adrsLine .line {
+    display: flex;
+    gap: 1rem;
+}
+#reserv .reservGrid .gridLine .adrsLine .adrsBtn {
+    background: #f4f4f4;
+    width: 8.5rem;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    border: 1px solid #555555;
+    font-size: 1.6rem;
+    font-family: inherit;
+}
+#reserv .reservGrid .gridLine .radLine {
+    display: flex;
+    gap: 3rem;
+}
+#reserv .reservGrid .gridLine .radLine .rad {
+}
+#reserv .reservGrid .gridLine .radLine .rad input {
+    display: none;
+}
+#reserv .reservGrid .gridLine .radLine .rad input + label {
+    padding-left: 3rem;
+    background: url("../img/sub/ic_radio_off.svg") left center / 2rem 2rem no-repeat;
+}
+#reserv .reservGrid .gridLine .radLine .rad input:checked + label {
+    background: url("../img/sub/ic_radio_on.svg") left center / 2rem 2rem no-repeat;
+}
+#reserv .reservGrid .gridLine .dateLine {
+}
+#reserv .reservGrid .gridLine .dateLine .ipt {
+    background: url("../img/sub/ic_date.svg") right 1.5rem center / 2.4rem 2.4rem no-repeat;
+}
+#reserv .reservGrid .gridLine .dateLine .prg {
+    padding-top: 0.7rem;
+}
+#reserv .reservGrid .gridLine .fileLine {
+    display: flex;
+    gap: 1rem;
+}
+#reserv .reservGrid .gridLine .fileLine .fileBtn {
+    background: #f4f4f4;
+    width: 8.5rem;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    border: 1px solid #555555;
+    font-size: 1.6rem;
+    font-family: inherit;
+}
+
+#ui-datepicker-div {
+    font-size: 1.6rem;
+}
+
+@media all and (max-width: 880px) {
+    #reserv .rsvTit {
+        font-size: 3.4rem;
+    }
+    #reserv .rsvTit::before {
+        top: 1.2rem;
+    }
+
+    #reserv .reservGrid {
+        font-size: 2.4rem;
+    }
+    #reserv .reservGrid .gridLine {
+        width: 100%;
+    }
+    #reserv .reservGrid .gridLine .opt {
+        width: 21rem;
+        justify-content: flex-start;
+        padding: 0 2.1rem;
+        min-height: 9.5rem;
+        text-align: left;
+    }
+    #reserv .reservGrid .gridLine .con {
+        padding: 2rem;
+    }
+    #reserv .reservGrid .gridLine .con .downBtn {
+    }
+    #reserv .reservGrid .gridLine .txtBtnGroup {
+    }
+    #reserv .reservGrid .gridLine .txtBtn {
+        font-size: 2.2rem;
+        line-height: 1;
+        padding: 1rem 1.3rem;
+    }
+    #reserv .reservGrid .gridLine .stateGroup {
+    }
+    #reserv .reservGrid .gridLine .stateGroup .line {
+    }
+    #reserv .reservGrid .gridLine .stateGroup .line .state {
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #reserv .reservGrid .gridLine .stateGroup .prg {
+        font-size: 2rem;
+    }
+
+    #reserv .reservGrid .gridLine.w100 {
+        width: 100%;
+    }
+    #reserv .reservGrid .gridLine.w50 {
+        width: 100%;
+    }
+    #reserv .reservGrid .gridLine .opt.opt170 {
+        width: 21rem;
+    }
+
+    #reserv .reservGrid .gridLine .iptLine {
+    }
+    #reserv .reservGrid .gridLine .iptLine .ipt {
+        height: 5.5rem;
+        font-size: 2rem;
+    }
+    #reserv .reservGrid .gridLine .iptLine .slc {
+        height: 5.5rem;
+        font-size: 2rem;
+    }
+
+    #reserv .reservGrid .gridLine .phoneLine {
+        max-width: 100%;
+    }
+    #reserv .reservGrid .gridLine .adrsLine {
+    }
+    #reserv .reservGrid .gridLine .adrsLine .line {
+    }
+    #reserv .reservGrid .gridLine .adrsLine .adrsBtn {
+        font-size: 2rem;
+        width: 9.8rem;
+    }
+    #reserv .reservGrid .gridLine .radLine {
+    }
+    #reserv .reservGrid .gridLine .radLine.line3 {
+        gap: 1.65rem;
+    }
+    #reserv .reservGrid .gridLine .radLine .rad {
+        font-size: 2rem;
+    }
+    #reserv .reservGrid .gridLine .radLine .rad input + label {
+    }
+    #reserv .reservGrid .gridLine .radLine .rad input:checked + label {
+    }
+    #reserv .reservGrid .gridLine .dateLine {
+    }
+    #reserv .reservGrid .gridLine .dateLine .ipt {
+    }
+    #reserv .reservGrid .gridLine .dateLine .prg {
+        font-size: 2rem;
+    }
+    #reserv .reservGrid .gridLine .fileLine {
+    }
+    #reserv .reservGrid .gridLine .fileLine .fileBtn {
+        font-size: 2rem;
+        width: 9.8rem;
+    }
+
+    #ui-datepicker-div {
+        font-size: 2.2rem;
+    }
+}
+
+#reserv .agreeGroup {
+    margin-top: 8rem;
+}
+#reserv .agreeGroup .agreeBox {
+    background: #f4f4f4;
+    border-radius: 0.5rem;
+    padding: 2.2rem 3rem;
+}
+#reserv .agreeGroup .agreeBox + .agreeBox {
+    margin-top: 1rem;
+}
+#reserv .agreeGroup .agreeBox .titArea {
+}
+#reserv .agreeGroup .agreeBox .titArea .tit {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+#reserv .agreeGroup .agreeBox .titArea .tit img {
+}
+#reserv .agreeGroup .agreeBox .check {
+    margin-left: auto;
+    font-size: 1.6rem;
+}
+#reserv .agreeGroup .agreeBox .check input {
+    display: none;
+}
+#reserv .agreeGroup .agreeBox .check input + label {
+    padding: 0.4rem 0;
+    padding-left: 3rem;
+    background: url("../img/sub/ic_radio_off.svg") left center / 2rem 2rem no-repeat;
+}
+#reserv .agreeGroup .agreeBox .check input:checked + label {
+    background: url("../img/sub/ic_radio_on.svg") left center / 2rem 2rem no-repeat;
+}
+#reserv .agreeGroup .agreeBox .contArea {
+    margin-top: 1.5rem;
+}
+#reserv .agreeGroup .agreeBox .contArea textarea {
+    padding: 2rem 1.5rem;
+    box-shadow: none;
+    width: 100%;
+    font-size: 1.4rem;
+    font-family: inherit;
+    border: 1px solid #cccccc;
+}
+
+@media all and (max-width: 880px) {
+    #reserv .agreeGroup {
+    }
+    #reserv .agreeGroup .agreeBox {
+    }
+    #reserv .agreeGroup .agreeBox + .agreeBox {
+    }
+    #reserv .agreeGroup .agreeBox .titArea {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 2.4rem;
+        gap: 2rem;
+    }
+    #reserv .agreeGroup .agreeBox .titArea .tit {
+    }
+    #reserv .agreeGroup .agreeBox .titArea .tit img {
+        width: 3rem;
+    }
+    #reserv .agreeGroup .agreeBox .check {
+        font-size: 2.2rem;
+        margin: 0;
+    }
+    #reserv .agreeGroup .agreeBox .check input {
+    }
+    #reserv .agreeGroup .agreeBox .check input + label {
+    }
+    #reserv .agreeGroup .agreeBox .check input:checked + label {
+    }
+    #reserv .agreeGroup .agreeBox .contArea {
+    }
+    #reserv .agreeGroup .agreeBox .contArea textarea {
+        font-size: 2rem;
+    }
+
+    #reserv .agreeGroup .agreeBox .titArea.typeB {
+        flex-direction: row;
+    }
+    #reserv .agreeGroup .agreeBox .titArea.typeB .check {
+        margin-left: auto;
+    }
+}
+
+#reserv .resultModal {
+    z-index: 9999;
+}
+#reserv .resultModal .modalBg {
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+}
+#reserv .resultModal .modalBox {
+    background: #fff;
+    max-width: 70.5rem;
+    border-radius: 0.5rem;
+    padding: 4.5rem 4rem;
+}
+#reserv .resultModal .modalBox .tit {
+    padding-bottom: 1rem;
+}
+#reserv .resultModal .modalBox .wrt {
+}
+#reserv .resultModal .modalBox .current {
+    margin: 2.5rem 0;
+    background: #f4f4f4;
+    padding: 2rem 0;
+}
+#reserv .resultModal .modalBox .lstBox {
+    border: 1px solid #797979;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-height: 47.5rem;
+    overflow-y: scroll;
+}
+#reserv .resultModal .modalBox .lstBox table {
+    text-align: center;
+}
+#reserv .resultModal .modalBox .lstBox tr {
+}
+#reserv .resultModal .modalBox .lstBox th {
+    padding: 1rem 0;
+    background: #f4f4f4;
+    border: 1px solid #e0e0e0;
+}
+#reserv .resultModal .modalBox .lstBox td {
+    padding: 0.8rem 0;
+    border: 1px solid #e0e0e0;
+}
+#reserv .resultModal .modalBox .lstBox td:nth-child(1) {
+    width: auto;
+}
+#reserv .resultModal .modalBox .lstBox td:nth-child(2) {
+    width: 43.36%;
+}
+#reserv .resultModal .modalBox .lstBox td:nth-child(3) {
+    width: 43.36%;
+}
+#reserv .resultModal .modalBox .closeBtn {
+    background: #554534;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    padding: 1.2rem 4.4rem;
+    margin-top: 2.5rem;
+}
+#reserv .resultModal .modalBox .closeBtn:hover {
+    background: #1f1810;
+}
+
+@media all and (max-width: 880px) {
+    #reserv .resultModal {
+    }
+    #reserv .resultModal .modalBg {
+    }
+    #reserv .resultModal .modalBox {
+        max-width: 69rem;
+    }
+    #reserv .resultModal .modalBox .tit {
+        font-size: 3.4rem;
+    }
+    #reserv .resultModal .modalBox .wrt {
+        font-size: 2.6rem;
+    }
+    #reserv .resultModal .modalBox .current {
+        font-size: 2.4rem;
+    }
+    #reserv .resultModal .modalBox .lstBox {
+        font-size: 2.2rem;
+    }
+    #reserv .resultModal .modalBox .lstBox table {
+    }
+    #reserv .resultModal .modalBox .lstBox tr {
+    }
+    #reserv .resultModal .modalBox .lstBox th {
+    }
+    #reserv .resultModal .modalBox .lstBox td {
+    }
+    #reserv .resultModal .modalBox .closeBtn {
+        font-size: 2.2rem;
+        padding: 2.2rem 6rem;
+    }
+}
+
+#reserv .rejectModal {
+}
+#reserv .rejectModal .modalBg {
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+}
+#reserv .rejectModal .modalBox {
+    background: #fff;
+    max-width: 54rem;
+    border-radius: 0.5rem;
+    padding: 6rem 4.5rem;
+}
+#reserv .rejectModal .modalBox .tit {
+    margin-bottom: 2.5rem;
+}
+#reserv .rejectModal .modalBox .box {
+    background: #f4f4f4;
+    border-radius: 0.5rem;
+    padding: 1.7rem 2rem;
+    text-align: left;
+    min-height: 12.4rem;
+    max-height: 30rem;
+}
+#reserv .rejectModal .modalBox .btns {
+    margin-top: 4.5rem;
+    gap: 0.5rem;
+}
+#reserv .rejectModal .modalBox .btns .btn {
+    width: 12rem;
+    padding: 1.2rem 0;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    font-family: inherit;
+}
+#reserv .rejectModal .modalBox .btns .cancelBtn {
+    border: 1px solid #bbbbbb;
+}
+#reserv .rejectModal .modalBox .btns .closeBtn {
+    background: #554534;
+    border: 1px solid #554534;
+    color: #fff;
+}
+#reserv .rejectModal .modalBox .btns .cancelBtn:hover {
+    border: 1px solid #212121;
+}
+#reserv .rejectModal .modalBox .btns .closeBtn:hover {
+    background: #1f1810;
+    border: 1px solid #1f1810;
+}
+
+@media all and (max-width: 880px) {
+    #reserv .rejectModal {
+    }
+    #reserv .rejectModal .modalBg {
+    }
+    #reserv .rejectModal .modalBox {
+        max-width: 69rem;
+    }
+    #reserv .rejectModal .modalBox .tit {
+        font-size: 3.4rem;
+    }
+    #reserv .rejectModal .modalBox .box {
+        font-size: 2.6rem;
+    }
+    #reserv .rejectModal .modalBox .btns {
+    }
+    #reserv .rejectModal .modalBox .btns .btn {
+        font-size: 2.2rem;
+        width: 16rem;
+        padding: 2.2rem 0;
+    }
+    #reserv .rejectModal .modalBox .btns .cancelBtn {
+    }
+    #reserv .rejectModal .modalBox .btns .closeBtn {
+    }
+}
+
+#reserv .botBtns {
+    margin-top: 8rem;
+    gap: 0.5rem;
+}
+#reserv .botBtns .btn {
+    font-size: 1.8rem;
+    display: inline-block;
+    padding: 1.7rem 0;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    line-height: 1;
+    width: 15rem;
+    text-align: center;
+}
+#reserv .botBtns .btnA {
+    background: #fff;
+    border: 1px solid #bbbbbb;
+    color: #333;
+}
+#reserv .botBtns .btnB {
+    background: #554534;
+    border: 1px solid #554534;
+    color: #fff;
+}
+#reserv .botBtns .btnA:hover {
+    color: #212121;
+    border: 1px solid #212121;
+}
+#reserv .botBtns .btnB:hover {
+    background: #1f1810;
+    border: 1px solid #1f1810;
+}
+
+@media all and (max-width: 880px) {
+    #reserv .botBtns {
+    }
+    #reserv .botBtns .btn {
+        font-size: 2.2rem;
+        padding: 2.2rem 0;
+        width: 16rem;
+    }
+    #reserv .botBtns .btnA {
+    }
+    #reserv .botBtns .btnB {
+    }
+}
+
+.paging {
+    gap: 1rem;
+    margin-top: 8rem;
+}
+.paging .pg {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    display: grid;
+    place-items: center;
+}
+.paging .pg.prev {
+    width: 7.6rem;
+    padding-left: 2.5rem;
+    background: url("../img/sub/ic_pg_prev.svg") left 0.8rem center / 2rem 2rem no-repeat;
+}
+.paging .pg.next {
+    width: 7.6rem;
+    padding-right: 2.5rem;
+    background: url("../img/sub/ic_pg_next.svg") right 0.8rem center / 2rem 2rem no-repeat;
+}
+.paging .pg.current {
+    color: #fff;
+    background: var(--fc2);
+    pointer-events: none;
+    cursor: default;
+}
+
+@media all and (max-width: 880px) {
+    .paging {
+        font-size: 2.5rem;
+    }
+    .paging .pg {
+    }
+    .paging .pg.prev {
+    }
+    .paging .pg.next {
+    }
+    .paging .pg.current {
+    }
+}
