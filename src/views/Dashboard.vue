@@ -104,14 +104,14 @@
                 <ul class="lstArea flex">
                     <li class="lst lstA">
                         <div class="bgImg">
-                            <div class="img pc"><img src="img/main/s4_img_1.jpg" alt=""></div>
-                            <div class="img mo"><img src="img/main/s4_img_1_mo.jpg" alt=""></div>
+                            <div class="img pc"><img src="/img/main/s4_img_1.jpg" alt=""></div>
+                            <div class="img mo"><img src="/img/main/s4_img_1_mo.jpg" alt=""></div>
                             <div class="txt abs w100 t_center fs20 fwt500 fcf">
                                 피부전문관리 및<br class="mo"> 체형관리 프로그램
                             </div>
                         </div>
                         <div class="hvImg abs w100 h100 w_center flex column alc t_center fcf justy_cnt">
-                            <img src="img/main/s4_ic_1.svg" alt="" class="ico">
+                            <img src="/img/main/s4_ic_1.svg" alt="" class="ico">
                             <div class="tit fs20 fwtbold">
                                 피부전문관리 및<br class="mo"> 체형관리 프로그램
                             </div>
@@ -124,14 +124,14 @@
 
                     <li class="lst lstB">
                         <div class="bgImg">
-                            <div class="img pc"><img src="img/main/s4_img_2.jpg" alt=""></div>
-                            <div class="img mo"><img src="img/main/s4_img_2_mo.jpg" alt=""></div>
+                            <div class="img pc"><img src="/img/main/s4_img_2.jpg" alt=""></div>
+                            <div class="img mo"><img src="/img/main/s4_img_2_mo.jpg" alt=""></div>
                             <div class="txt abs w100 t_center fs20 fwt500 fcf">
                                 목욕 및<br class="mo"> 모유수유 교육
                             </div>
                         </div>
                         <div class="hvImg abs w100 h100 w_center flex column alc t_center fcf justy_cnt">
-                            <img src="img/main/s4_ic_2.svg" alt="" class="ico">
+                            <img src="/img/main/s4_ic_2.svg" alt="" class="ico">
                             <div class="tit fs20 fwtbold">
                                 목욕 및 모유수유 교육
                             </div>
@@ -146,14 +146,14 @@
                 <ul class="lstArea flex">
                     <li class="lst lstB">
                         <div class="bgImg">
-                            <div class="img pc"><img src="img/main/s4_img_3.jpg" alt=""></div>
-                            <div class="img mo"><img src="img/main/s4_img_3_mo.jpg" alt=""></div>
+                            <div class="img pc"><img src="/img/main/s4_img_3.jpg" alt=""></div>
+                            <div class="img mo"><img src="/img/main/s4_img_3_mo.jpg" alt=""></div>
                             <div class="txt abs w100 t_center fs20 fwt500 fcf">
                                 소아과 전문의 회진 및<br class="mo"> 상시 대기
                             </div>
                         </div>
                         <div class="hvImg abs w100 h100 w_center flex column alc t_center fcf justy_cnt">
-                            <img src="img/main/s4_ic_3.svg" alt="" class="ico">
+                            <img src="/img/main/s4_ic_3.svg" alt="" class="ico">
                             <div class="tit fs20 fwtbold">
                                 소아과 전문의<br class="mo"> 회진 및 상시 대기
                             </div>
@@ -167,14 +167,14 @@
 
                     <li class="lst lstA">
                         <div class="bgImg">
-                            <div class="img pc"><img src="img/main/s4_img_4.jpg" alt=""></div>
-                            <div class="img mo"><img src="img/main/s4_img_4_mo.jpg" alt=""></div>
+                            <div class="img pc"><img src="/img/main/s4_img_4.jpg" alt=""></div>
+                            <div class="img mo"><img src="/img/main/s4_img_4_mo.jpg" alt=""></div>
                             <div class="txt abs w100 t_center fs20 fwt500 fcf">
                                 신생아 관리 및 전문케어
                             </div>
                         </div>
                         <div class="hvImg abs w100 h100 w_center flex column alc t_center fcf justy_cnt">
-                            <img src="img/main/s4_ic_4.svg" alt="" class="ico">
+                            <img src="/img/main/s4_ic_4.svg" alt="" class="ico">
                             <div class="tit fs20 fwtbold">
                                 신생아 관리 및 전문케어
                             </div>
@@ -188,14 +188,14 @@
 
                     <li class="lst lstB">
                         <div class="bgImg">
-                            <div class="img pc"><img src="img/main/s4_img_5.jpg" alt=""></div>
-                            <div class="img mo"><img src="img/main/s4_img_5_mo.jpg" alt=""></div>
+                            <div class="img pc"><img src="/img/main/s4_img_5.jpg" alt=""></div>
+                            <div class="img mo"><img src="/img/main/s4_img_5_mo.jpg" alt=""></div>
                             <div class="txt abs w100 t_center fs20 fwt500 fcf">
                                 요가 프로그램
                             </div>
                         </div>
                         <div class="hvImg abs w100 h100 w_center flex column alc t_center fcf justy_cnt">
-                            <img src="img/main/s4_ic_5.svg" alt="" class="ico">
+                            <img src="/img/main/s4_ic_5.svg" alt="" class="ico">
                             <div class="tit fs20 fwtbold">
                                 요가 프로그램
                             </div>
@@ -209,14 +209,14 @@
 
                     <li class="lst lstA">
                         <div class="bgImg">
-                            <div class="img pc"><img src="img/main/s4_img_6.jpg" alt=""></div>
-                            <div class="img mo"><img src="img/main/s4_img_6_mo.jpg" alt=""></div>
+                            <div class="img pc"><img src="/img/main/s4_img_6.jpg" alt=""></div>
+                            <div class="img mo"><img src="/img/main/s4_img_6_mo.jpg" alt=""></div>
                             <div class="txt abs w100 t_center fs20 fwt500 fcf">
                                 셀프 케어
                             </div>
                         </div>
                         <div class="hvImg abs w100 h100 w_center flex column alc t_center fcf justy_cnt">
-                            <img src="img/main/s4_ic_6.svg" alt="" class="ico">
+                            <img src="/img/main/s4_ic_6.svg" alt="" class="ico">
                             <div class="tit fs20 fwtbold">
                                 셀프 케어
                             </div>
