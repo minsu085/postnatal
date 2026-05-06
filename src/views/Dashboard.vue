@@ -255,11 +255,73 @@
                 </ul>
             </div>
         </div>
+
+        <div class="s6">
+            <div class="inner flex">
+                <div class="infoArea">
+                    <div class="titArea">
+                        <div class="subt nn fs20 fwtbold fc2">Contact us</div>
+                        <div class="tit fs42 fwtbold">오시는 길</div>
+                    </div>
+                    <ul class="lstArea">
+                        <li class="lst flex">
+                            <div class="tit flex alc fs22 fwtbold">
+                                <img src="/img/main/s6_ic_loca.svg" alt="" />주소
+                            </div>
+                            <div class="wrt fs22">
+                                경상북도 예천군 예천읍 상설시장1길 38-10
+                            </div>
+                        </li>
+                        <li class="lst flex">
+                            <div class="tit flex alc fs22 fwtbold">
+                                <img src="/img/main/s6_ic_call.svg" alt="" />대표전화
+                            </div>
+                            <div class="wrt fs22">
+                                054-650-0000<br />
+                                <span class="fs18 fc55">운영시간 : 09:00-18:00 (주말 및 공휴일 제외)</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="snsArea flex">
+                        <li class="lst lstA">
+                            <a href="#" target="_blank" class="link flex alc">
+                                <div class="txt fs16">네이버 지도 <i>바로가기</i></div>
+                                <img src="/img/main/s6_ic_naver.svg" alt="" class="ico" />
+                            </a>
+                        </li>
+                        <li class="lst lstB">
+                            <a href="#" target="_blank" class="link flex alc">
+                                <div class="txt fs16">카카오 지도 <i>바로가기</i></div>
+                                <img src="/img/main/s6_ic_kakao.svg" alt="" class="ico" />
+                            </a>
+                        </li>
+                        <li class="lst lstC">
+                            <a href="#" target="_blank" class="link flex alc">
+                                <div class="txt fs16">구글 지도 <i>바로가기</i></div>
+                                <img src="/img/main/s6_ic_google.svg" alt="" class="ico" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mapArea">
+                    <div class="pc">
+                        <div id="daumRoughmapContainer1777910615875"
+                            class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%"></div>
+                    </div>
+                    <div class="mo">
+                        <div id="daumRoughmapContainer1777910684299"
+                            class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, nextTick } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay as SwiperAutoplay, EffectFade as SwiperEffectFade, Navigation as SwiperNavigation } from 'swiper/modules';
 
@@ -294,4 +356,35 @@ const handleS3TabClick = (index) => {
         s3SwiperInstance.value.slideToLoop(index);
     }
 };
+
+// --- s6 카카오 약도 렌더링 함수 ---
+const renderMap = () => {
+    // 컴포넌트 마운트 후 0.5초 대기 (daum.roughmap 객체가 완전히 로드될 시간 확보)
+    setTimeout(() => {
+        if (window.daum && window.daum.roughmap) {
+            // 1. PC 맵 렌더링 (높이 650px 지정)
+            new window.daum.roughmap.Lander({
+                "timestamp": "1777910615875",
+                "key": "n8arohjtez5",
+                "mapHeight": "650" // width는 컨테이너(100rem)를 따라가므로 생략
+            }).render();
+
+            // 2. 모바일 맵 렌더링 (높이 260px 지정)
+            new window.daum.roughmap.Lander({
+                "timestamp": "1777910684299",
+                "key": "n8dohcamw6i",
+                "mapHeight": "260" // width는 컨테이너(100%)를 따라가므로 생략
+            }).render();
+        } else {
+            console.warn("카카오맵 로더 스크립트를 찾을 수 없습니다. index.html을 확인해주세요.");
+        }
+    }, 500);
+};
+
+// 화면이 그려진 직후 맵 그리기 실행
+onMounted(() => {
+    nextTick(() => {
+        renderMap();
+    });
+});
 </script>
