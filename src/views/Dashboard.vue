@@ -90,21 +90,141 @@
         <div class="s4">
             <div class="inner m_center inner1620">
                 <div class="titArea abs">
-                    <div class="subt nn fs20 fwtbold fc2">Care Service</div>
-                    <div class="tit fs42 fwtbold">따뜻한 돌봄, <br /> 세심한 케어 서비스</div>
-                    <div class="wrt fs18 fc45">건강 회복부터 편안한 휴식까지, 세심하게 챙기는 케어 서비스입니다.</div>
+                    <div class="subt nn fs20 fwtbold fc2">
+                        Care Service
+                    </div>
+                    <div class="tit fs42 fwtbold">
+                        따뜻한 돌봄, <br>
+                        세심한 케어 서비스
+                    </div>
+                    <div class="wrt fs18 fc45">
+                        건강 회복부터 편안한 휴식까지, 세심하게 챙기는 케어 서비스입니다.
+                    </div>
                 </div>
                 <ul class="lstArea flex">
                     <li class="lst lstA">
                         <div class="bgImg">
-                            <div class="img pc"><img src="/img/main/s4_img_1.jpg" alt="" /></div>
-                            <div class="img mo"><img src="/img/main/s4_img_1_mo.jpg" alt="" /></div>
-                            <div class="txt abs w100 t_center fs20 fwt500 fcf">피부전문관리 및<br class="mo" /> 체형관리 프로그램</div>
+                            <div class="img pc"><img src="img/main/s4_img_1.jpg" alt=""></div>
+                            <div class="img mo"><img src="img/main/s4_img_1_mo.jpg" alt=""></div>
+                            <div class="txt abs w100 t_center fs20 fwt500 fcf">
+                                피부전문관리 및<br class="mo"> 체형관리 프로그램
+                            </div>
                         </div>
                         <div class="hvImg abs w100 h100 w_center flex column alc t_center fcf justy_cnt">
-                            <img src="/img/main/s4_ic_1.svg" alt="" class="ico" />
-                            <div class="tit fs20 fwtbold">피부전문관리 및<br class="mo" /> 체형관리 프로그램</div>
-                            <div class="wrt fs18">산후 회복을 돕는 피부 전문 관리와<br />체형 관리 프로그램을 제공합니다.</div>
+                            <img src="img/main/s4_ic_1.svg" alt="" class="ico">
+                            <div class="tit fs20 fwtbold">
+                                피부전문관리 및<br class="mo"> 체형관리 프로그램
+                            </div>
+                            <div class="wrt fs18">
+                                산후 회복을 돕는 피부 전문 관리와<br>
+                                체형 관리 프로그램을 제공합니다.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="lst lstB">
+                        <div class="bgImg">
+                            <div class="img pc"><img src="img/main/s4_img_2.jpg" alt=""></div>
+                            <div class="img mo"><img src="img/main/s4_img_2_mo.jpg" alt=""></div>
+                            <div class="txt abs w100 t_center fs20 fwt500 fcf">
+                                목욕 및<br class="mo"> 모유수유 교육
+                            </div>
+                        </div>
+                        <div class="hvImg abs w100 h100 w_center flex column alc t_center fcf justy_cnt">
+                            <img src="img/main/s4_ic_2.svg" alt="" class="ico">
+                            <div class="tit fs20 fwtbold">
+                                목욕 및 모유수유 교육
+                            </div>
+                            <div class="wrt fs18">
+                                신생아 목욕과 모유수유에 대한<br class="mo"> 체계적인<br class="pc">
+                                교육 및 실습<br class="mo"> 중심 지도로 초보 부모도<br>
+                                자신 있게 돌볼 수 있도록 돕습니다.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="lstArea flex">
+                    <li class="lst lstB">
+                        <div class="bgImg">
+                            <div class="img pc"><img src="img/main/s4_img_3.jpg" alt=""></div>
+                            <div class="img mo"><img src="img/main/s4_img_3_mo.jpg" alt=""></div>
+                            <div class="txt abs w100 t_center fs20 fwt500 fcf">
+                                소아과 전문의 회진 및<br class="mo"> 상시 대기
+                            </div>
+                        </div>
+                        <div class="hvImg abs w100 h100 w_center flex column alc t_center fcf justy_cnt">
+                            <img src="img/main/s4_ic_3.svg" alt="" class="ico">
+                            <div class="tit fs20 fwtbold">
+                                소아과 전문의<br class="mo"> 회진 및 상시 대기
+                            </div>
+                            <div class="wrt fs18">
+                                주 1회 소아과 전문의가 회진하여<br class="mo"> 신생아의 건강<br class="pc">
+                                상태를 꼼꼼히<br class="mo"> 확인하며, 상시 콜 대기를 통해<br>
+                                필요 시 신속한 의료 상담과<br class="mo"> 지원을 제공합니다.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="lst lstA">
+                        <div class="bgImg">
+                            <div class="img pc"><img src="img/main/s4_img_4.jpg" alt=""></div>
+                            <div class="img mo"><img src="img/main/s4_img_4_mo.jpg" alt=""></div>
+                            <div class="txt abs w100 t_center fs20 fwt500 fcf">
+                                신생아 관리 및 전문케어
+                            </div>
+                        </div>
+                        <div class="hvImg abs w100 h100 w_center flex column alc t_center fcf justy_cnt">
+                            <img src="img/main/s4_ic_4.svg" alt="" class="ico">
+                            <div class="tit fs20 fwtbold">
+                                신생아 관리 및 전문케어
+                            </div>
+                            <div class="wrt fs18">
+                                신생아 목욕과 베이비 마사지 등<br>
+                                전문적인 케어를 통해 아기의 위생과<br>
+                                정서적 안정을 함께 지원합니다.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="lst lstB">
+                        <div class="bgImg">
+                            <div class="img pc"><img src="img/main/s4_img_5.jpg" alt=""></div>
+                            <div class="img mo"><img src="img/main/s4_img_5_mo.jpg" alt=""></div>
+                            <div class="txt abs w100 t_center fs20 fwt500 fcf">
+                                요가 프로그램
+                            </div>
+                        </div>
+                        <div class="hvImg abs w100 h100 w_center flex column alc t_center fcf justy_cnt">
+                            <img src="img/main/s4_ic_5.svg" alt="" class="ico">
+                            <div class="tit fs20 fwtbold">
+                                요가 프로그램
+                            </div>
+                            <div class="wrt fs18">
+                                산후 회복을 돕는 요가 프로그램을<br class="mo"> 운영합니다.<br class="pc">
+                                부드러운 동작으로<br class="mo"> 몸의 균형을 회복하고,<br class="pc">
+                                심신의<br class="mo"> 안정과 스트레스 완화를 지원합니다.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="lst lstA">
+                        <div class="bgImg">
+                            <div class="img pc"><img src="img/main/s4_img_6.jpg" alt=""></div>
+                            <div class="img mo"><img src="img/main/s4_img_6_mo.jpg" alt=""></div>
+                            <div class="txt abs w100 t_center fs20 fwt500 fcf">
+                                셀프 케어
+                            </div>
+                        </div>
+                        <div class="hvImg abs w100 h100 w_center flex column alc t_center fcf justy_cnt">
+                            <img src="img/main/s4_ic_6.svg" alt="" class="ico">
+                            <div class="tit fs20 fwtbold">
+                                셀프 케어
+                            </div>
+                            <div class="wrt fs18">
+                                세라믹 침대, 골반 교정, 족욕,<br class="mo"> 적외선·파라핀 치료<br class="pc">
+                                등 다양한<br class="mo"> 셀프 케어 프로그램을 제공하며<br>
+                                휴식과 회복의 시간을 가질 수 있습니다.
+                            </div>
                         </div>
                     </li>
                 </ul>
