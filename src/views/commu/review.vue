@@ -42,11 +42,23 @@
                     <input type="text" class="ipt">
                     <button class="btn">검색</button>
                 </div>
-            </div>       
-            
-            <ul class="boardGall">
-               <li class="gallLst"></li> 
+            </div>
+
+            <ul class="boardGall flex fxwrap">
+                <li class="gallLst" v-for="item in reviewList" :key="item.id">
+                    <router-link to="/board-view">
+                        <div class="thumb img">
+                            <img :src="item.imgSrc" :alt="item.title">
+                        </div>
+                        <div class="subj fs20 fwtbold fc33">{{ item.title }}</div>
+                        <div class="date fs16 fc55">{{ item.date }}</div>
+                    </router-link>
+                </li>
             </ul>
+            
+            <div class="btnArea">
+                <button class="wrtBtn fs16 fc33">글쓰기</button>
+            </div>
 
             <div class="paging flex justy_cnt fs18 fc33">
                 <a href="#" class="pg prev">이전</a>
@@ -65,5 +77,28 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 
+const totalCount = ref(12);
+
+const sampleTitles = [
+    '시설이 너무 깨끗하고 원장님이 친절하셔요!시설이 너무 깨끗하고 원장님이 친절하셔요!시설이 너무 깨끗하고 원장님이 친절하셔요!',
+    '식사가 정말 맛있게 잘 나옵니다. 강력 추천해요.',
+    '마사지 프로그램 덕분에 부기가 많이 빠졌어요.',
+    '둘째 낳으면 꼭 다시 오고 싶은 산후조리원입니다.',
+    '남편과 함께 쾌적하게 잘 쉬다 갑니다.',
+    '신생아실 선생님들께서 아이를 정말 잘 케어해주세요.'
+];
+
+const reviewList = ref(
+    Array.from({ length: 12 }, (_, index) => ({
+        id: 12 - index,
+        
+        imgSrc: `/img/sub/review_thumb_${index + 1}.jpg`, 
+
+        title: sampleTitles[index % sampleTitles.length],
+
+        date: `2026-05-${String(18 - index).padStart(2, '0')}`
+    }))
+);
 </script>

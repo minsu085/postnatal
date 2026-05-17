@@ -56,42 +56,42 @@
                     <tbody>
                         <tr>
                             <td class="num"><span class="notc">공지</span></td>
-                            <td class="subj"><a href="#">예시 게시글입니다.</a></td>
+                            <td class="subj"><router-link to="/board-view">예시 게시글입니다.</router-link></td>
                             <td class="file"><img src="/img/sub/ic_file.svg" alt=""></td>
                             <td class="hits">100</td>
                             <td class="date">2026-01-01</td>
                         </tr>
                         <tr>
                             <td class="num">14</td>
-                            <td class="subj"><a href="#">예시 게시글입니다.</a></td>
+                            <td class="subj"><router-link to="/board-view">예시 게시글입니다.</router-link></td>
                             <td class="file"><img src="/img/sub/ic_file.svg" alt=""></td>
                             <td class="hits">100</td>
                             <td class="date">2026-01-01</td>
                         </tr>
                         <tr>
                             <td class="num">13</td>
-                            <td class="subj"><a href="#">예시 게시글입니다.</a></td>
+                            <td class="subj"><router-link to="/board-view">예시 게시글입니다.</router-link></td>
                             <td class="file"><img src="/img/sub/ic_file.svg" alt=""></td>
                             <td class="hits">100</td>
                             <td class="date">2026-01-01</td>
                         </tr>
                         <tr>
                             <td class="num">12</td>
-                            <td class="subj"><a href="#">예시 게시글입니다.</a></td>
+                            <td class="subj"><router-link to="/board-view">예시 게시글입니다.</router-link></td>
                             <td class="file"><img src="/img/sub/ic_file.svg" alt=""></td>
                             <td class="hits">100</td>
                             <td class="date">2026-01-01</td>
                         </tr>
                         <tr>
                             <td class="num">11</td>
-                            <td class="subj"><a href="#">예시 게시글입니다.</a></td>
+                            <td class="subj"><router-link to="/board-view">예시 게시글입니다.</router-link></td>
                             <td class="file"><img src="/img/sub/ic_file.svg" alt=""></td>
                             <td class="hits">100</td>
                             <td class="date">2026-01-01</td>
                         </tr>
                         <tr>
                             <td class="num">10</td>
-                            <td class="subj"><a href="#">예시 게시글입니다.</a></td>
+                            <td class="subj"><router-link to="/board-view">예시 게시글입니다.</router-link></td>
                             <td class="file"><img src="/img/sub/ic_file.svg" alt=""></td>
                             <td class="hits">100</td>
                             <td class="date">2026-01-01</td>

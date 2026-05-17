@@ -119,7 +119,7 @@
     #footer .infoArea .infoB .lst {font-size: 2.2rem; flex-direction: column; gap: 0.5rem;}
     #footer .infoArea .infoB .lst li {}
     #footer .infoArea .infoB .copy {font-size: 2.2rem; padding-top: 1.5rem;}
-}
+  }
 
 #main {}
 #main .s1 {}
@@ -127,7 +127,11 @@
 #main .s1 .txtArea {bottom: 27.7rem; z-index: 1}
 #main .s1 .txtArea .subt {letter-spacing: 0.05em; font-weight: 500;}
 #main .s1 .txtArea .tit {padding: 2.7rem 0 6rem;}
-#main .s1 .txtArea .link {color: #fff; gap: 1rem;}
+#main .s1 .txtArea .link {color: #fff; gap: 1rem; position: relative; padding-bottom: 0.4rem;}
+#main .s1 .txtArea .link::after {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left center; transition: transform 0.35s ease;}
+#main .s1 .txtArea .link img {transition: transform 0.25s ease;}
+#main .s1 .txtArea .link:hover::after {transform: scaleX(1);}
+#main .s1 .txtArea .link:hover img {transform: rotate(90deg);}
 
 @media all and (max-width: 880px){
     #main {}
@@ -260,12 +264,16 @@
 #main .s5 .lstArea .lst a {display: block; padding: 4.3rem 5rem;}
 #main .s5 .lstArea .lst .tit {line-height: 1.8;}
 #main .s5 .lstArea .lst .wrt {padding: 0.5rem 0 3rem; opacity: 0.8; line-height: 1.6}
-#main .s5 .lstArea .lst .link {gap: 1rem;}
+#main .s5 .lstArea .lst .link {gap: 1rem; position: relative; width: fit-content; padding-bottom: 0.4rem;}
+#main .s5 .lstArea .lst .link::after {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left center; transition: transform 0.35s ease;}
+#main .s5 .lstArea .lst .link img {transition: transform 0.25s ease;}
 #main .s5 .lstArea .lst .ico {right: 4rem;}
 #main .s5 .lstArea .lstA {background: #35312C;}
 #main .s5 .lstArea .lstA:hover {background: #28231D;}
 #main .s5 .lstArea .lstB {background: #A28362;}
 #main .s5 .lstArea .lstB:hover {background: #99754F}
+#main .s5 .lstArea .lst:hover .link::after {transform: scaleX(1);}
+#main .s5 .lstArea .lst:hover .link img {transform: rotate(90deg);}
 
 @media all and (max-width: 880px){
     #main .s5 {}
@@ -368,7 +376,7 @@
     #contents .subTitle .menu img {width: 1.8rem;}
 }
 
-/**********온라인 예약**********/
+
 #reserv {}
 #reserv .guidePanel {margin-bottom: 8rem;}
 #reserv .guideBox {}
@@ -595,7 +603,8 @@
 #reserv .resultModal .modalBg {background: rgba(0,0,0,0.7); top: 0;}
 #reserv .resultModal .modalBox {background: #fff; max-width: 70.5rem; border-radius: 0.5rem; padding: 4.5rem 4rem;}
 #reserv .resultModal .modalBox .tit {padding-bottom: 1rem;}
-#reserv .resultModal .modalBox .wrt {}
+#reserv .resultModal .modalBox .wrt {color: #555; line-height: 1.6; padding-bottom: 2rem;}
+#reserv .resultModal .modalBox .wrt strong {color: var(--fc2); font-weight: 700;}
 #reserv .resultModal .modalBox .current {margin: 2.5rem 0; background: #F4F4F4; padding: 2rem 0;}
 #reserv .resultModal .modalBox .lstBox {border: 1px solid #797979; border-radius: 0.5rem; overflow: hidden; max-height: 47.5rem; overflow-y: scroll;}
 #reserv .resultModal .modalBox .lstBox table {text-align: center;}
@@ -705,6 +714,30 @@
     #baord .boardTable td.date {width: 15rem;}
 }
 
+#baord .boardGall {gap: 8rem 2.6rem;}
+#baord .gallLst {width: calc((100% - 7.8rem) / 4);}
+#baord .gallLst .thumb {height: 28rem; border-radius: 0.5rem; overflow: hidden;}
+#baord .gallLst .thumb img {height: 100%; object-fit: cover;}
+#baord .gallLst .subj {margin: 3rem 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; transition: 0.3s;}
+#baord .gallLst .date {}
+#baord .gallLst:hover .subj {color: var(--fc2);}
+
+#baord .btnArea {text-align: right; margin-top: 5rem;}
+#baord .btnArea .wrtBtn {width: 12rem; text-align: center; padding: 1.2rem 0; border-radius: 0.5rem; font-weight: 500; font-family: inherit; border: 1px solid #BBBBBB;}
+#baord .btnArea .wrtBtn:hover {border: 1px solid #212121;}
+
+@media all and (max-width: 880px){
+    #baord .boardGall {gap: 8rem 1.5rem;}
+    #baord .gallLst {width: calc((100% - 1.5rem) / 2);}
+    #baord .gallLst .thumb {height: 24rem;}
+    #baord .gallLst .subj {font-size: 2.4rem;}
+    #baord .gallLst .date {font-size: 2rem;}
+
+    #baord .btnArea {}  
+    #baord .btnArea .wrtBtn {font-size: 2.1rem; width: 16rem; padding: 2.2rem 0;}
+}
+
+
 #boardView {}
 #boardView .topArea {background: #F9F9F9; border: 1px solid #797979; border-right: 0; border-left: 0; padding: 4rem 3rem;}
 #boardView .topArea .title {margin-bottom: 2.1rem; line-height: 1.2;}
@@ -728,6 +761,7 @@
 #boardView .naviArea .naviLst .date {padding: 0 2rem; flex-shrink: 0;}
 
 #boardView .botBtns {margin-top: 5rem; gap: 0.5rem;}
+#boardView .botBtns .mngBtns {gap: 1rem; margin-right: auto;}
 #boardView .botBtns .btn {font-size: 1.8rem; display: inline-block; padding: 1.7rem 0; border-radius: 0.5rem; font-family: inherit; line-height: 1; width: 15rem; text-align: center;}
 #boardView .botBtns .btnA {background: #fff; border: 1px solid #BBBBBB; color: #333}
 #boardView .botBtns .btnB {background: #554534; border: 1px solid #554534; color: #fff;}
@@ -755,6 +789,27 @@
     #boardView .botBtns .btnB {}
 }
 
+.passModal {z-index: 9999;}
+.passModal .modalBg {background: rgba(0,0,0,0.7);}
+.passModal .modalBox {background-color: #fff; border-radius: 1rem; width: 54rem; padding: 6rem 0;}
+.passModal .modalBox .tit {margin-bottom: 2.5rem; text-align: center;}
+.passModal .modalBox .ipt {height: 5rem; border-radius: 0.5rem; background: #F9F9F9; border: 1px solid #ccc; width: 100%; max-width: 45rem; padding: 0 2rem; color: #333;}
+.passModal .modalBox .btns {margin-top: 4.5rem; gap: 0.5rem}
+.passModal .modalBox .btns .btn {width: 12rem; text-align: center; padding: 1.2rem 0; border-radius: 0.5rem; font-weight: 500; font-family: inherit; font-size: inherit;}
+.passModal .modalBox .btns .btnA {border: 1px solid #BBBBBB; color: #333;}
+.passModal .modalBox .btns .btnA:hover {border: 1px solid #212121;}
+.passModal .modalBox .btns .btnB {background-color: #554534; border: 1px solid #554534; color: #fff;}
+.passModal .modalBox .btns .btnB:hover {background-color: #1F1810;}
+
+@media all and (max-width: 880px){
+    .passModal {}
+    .passModal .modalBg {}
+    .passModal .modalBox {}
+    .passModal .modalBox .tit {font-size: 2.8rem;}
+    .passModal .modalBox .ipt {}
+    .passModal .modalBox .btns {font-size: 2.1rem;}
+    .passModal .modalBox .btns .btn {width: 16rem; padding: 2.2rem 0;}
+}
 
 /**********페이징**********/
 .paging {gap: 1rem; margin-top: 8rem;}

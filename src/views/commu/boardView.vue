@@ -59,9 +59,25 @@
                 </li>
             </ul>
             <div class="botBtns flex justy_cnt">
-                <button type="button" class="btn btnB" >목록으로</button>
+                <div class="mngBtns flex">
+                    <button type="button" class="btn btnA" @click="openModal">수정</button>
+                    <button type="button" class="btn btnA" @click="openModal">삭제</button>
+                </div>
+                <button type="button" class="btn btnB" @click="$router.push('/notice')">목록으로</button>
             </div>
 
+        </div>
+
+        <div class="passModal fixed w100 h100 left0 top0" v-if="isModalOpen">
+            <div class="modalBg h100"></div>
+            <div class="modalBox abs w_center flex column alc">
+                <div class="tit fs22 fwtbold">글 작성시<br class="mo"> 입력한 비밀번호를 입력해주세요.</div>
+                <input type="text" class="ipt">
+                <div class="btns flex justy_cnt fs16">
+                    <button class="cancel btn btnA" @click="closeModal">취소</button>
+                    <button class="confirm btn btnB">확인</button>
+                </div>
+            </div>
         </div>
        
     </div>
@@ -69,5 +85,22 @@
 </template>
 
 <script setup>
+import { ref, onUnmounted } from 'vue';
 
+const isModalOpen = ref(false);
+
+const openModal = () => {
+    isModalOpen.value = true;
+    document.body.style.overflow = 'hidden';
+};
+
+const closeModal = () => {
+    isModalOpen.value = false;
+    document.body.style.overflow = ''; 
+};
+
+// 모달이 열린 상태에서 뒤로가기 등으로 페이지를 벗어날 경우 스크롤 잠금 해제
+onUnmounted(() => {
+    document.body.style.overflow = '';
+});
 </script>
