@@ -102,7 +102,11 @@ const menuData = [
     },
     {
         title: '커뮤니티',
-        subMenus: [{ name: '공지사항' }, { name: '이용후기' }, { name: '문의하기' }]
+        subMenus: [
+            { name: '공지사항', path: '/notice'  }, 
+            { name: '이용후기', path: '/review' }, 
+            { name: '문의하기', path: '/inquiry' }
+        ]
     }
 ];
 

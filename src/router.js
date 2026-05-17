@@ -17,6 +17,12 @@ const routes = [
             {path: 'reserv-check', name: 'reservCheck', component: () => import('@/views/reserv/ReservCheck.vue'), meta: { title: '예약 확인' }},
             {path: 'reserv-result', name: 'reservResult', component: () => import('@/views/reserv/ReservResult.vue'), meta: { title: '예약 결과' }},
             {path: 'reserv-detail', name: 'reservDetail', component: () => import('@/views/reserv/ReservDetail.vue'), meta: { title: '예약 상세 내역' }},
+
+            // 커뮤니티
+            {path: 'notice', name: 'notice', component: () => import('@/views/commu/notice.vue'), meta: { title: '공지사항' }},
+            {path: 'review', name: 'review', component: () => import('@/views/commu/review.vue'), meta: { title: '이용후기' }},
+            {path: 'inquiry', name: 'inquiry', component: () => import('@/views/commu/inquiry.vue'), meta: { title: '문의하기' }},
+            {path: 'board-view', name: 'boardView', component: () => import('@/views/commu/boardView.vue'), meta: { title: '게시판상세' }},
         ],
     },
 
