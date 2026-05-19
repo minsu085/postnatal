@@ -83,7 +83,11 @@ import { ref } from 'vue';
 const menuData = [
     {
         title: '산후조리원 소개',
-        subMenus: [{ name: '조리원 소개' }, { name: '시설현황' }, { name: '오시는길' }]
+        subMenus: [
+            { name: '조리원 소개', path: '/intro' }, 
+            { name: '시설현황', path: '/facility' }, 
+            { name: '오시는길', path: '/direction' }
+        ]
     },
     {
         title: '시설안내',

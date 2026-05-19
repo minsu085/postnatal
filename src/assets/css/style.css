@@ -368,12 +368,79 @@
 #contents .subTitle .title {}
 #contents .subTitle .menu {gap: 1rem;}
 
+#contents2 {padding-top: 10rem;}
+#contents2 .subTitle {padding-bottom: 1rem; border-bottom: 1px solid #E0E0E0; margin-bottom: 7rem;}
+#contents2 .subTitle .title {}
+#contents2 .subTitle .menu {gap: 1rem;}
+
 @media all and (max-width: 880px){
     #contents {max-width: var(--innerMo);}
     #contents .subTitle {}
     #contents .subTitle .title {font-size: 4rem;}
     #contents .subTitle .menu {font-size: 2.2rem;}
     #contents .subTitle .menu img {width: 1.8rem;}
+
+    #contents2 {}
+    #contents2 .subTitle {max-width: var(--innerMo);}
+    #contents2 .subTitle .title {font-size: 4rem;}
+    #contents2 .subTitle .menu {font-size: 2.2rem;}
+    #contents2 .subTitle .menu img {width: 1.8rem;}
+}
+
+#intro {}
+#intro .s1 {}
+#intro .s1 .inner {}
+#intro .s1 .imgArea {border-radius: 0.5rem; overflow: hidden;}
+#intro .s1 .txtArea {padding: 8rem 0 10rem;}
+#intro .s1 .txtArea .tit {padding-bottom: 1.8rem;}
+#intro .s1 .txtArea .wrt {line-height: 1.7;}
+#intro .s2 {background-color: #F4F4F4;}
+#intro .s2 .inner {max-width: 142rem; padding: 15rem 0;;}
+#intro .s2 .lstArea {}
+#intro .s2 .lstArea .lst {gap: 8rem}
+#intro .s2 .lstArea .lst + .lst {margin-top: 7rem;}
+#intro .s2 .lstArea .lst:nth-child(even) {flex-direction: row-reverse;}
+#intro .s2 .lstArea .lst .img {width: clac((100% - 8rem) / 2); border-radius: 0.5rem; overflow: hidden;}
+#intro .s2 .lstArea .lst .txts {width: clac((100% - 8rem) / 2);}
+#intro .s2 .lstArea .lst .txts .subt {line-height: 1.2;}
+#intro .s2 .lstArea .lst .txts .tit {padding: 0.5rem 0 1.3rem;}
+#intro .s2 .lstArea .lst .txts .wrt {}
+#intro .s3 {}
+#intro .s3 .imgArea {}
+#intro .s3 .txtArea {}
+#intro .s3 .txtArea .tit {}
+#intro .s3 .txtArea .tit .line {gap: 2rem; padding-top: 0.7rem;}
+#intro .s3 .txtArea .tit .line span {display: inline-block; width: 4rem; height: 0.1rem; background: #fff; }
+#intro .s3 .txtArea .btns {margin-top: 4rem;}
+#intro .s3 .txtArea .btns .linkBtn {padding: 1.2rem 2.7rem; background-color: var(--fc2); border-radius: 5rem; gap: 1rem; transition: 0.2s;} 
+#intro .s3 .txtArea .btns .linkBtn:hover {background: #8a6c4d;}
+
+@media all and (max-width: 880px){
+    #intro {}
+    #intro .s1 {}
+    #intro .s1 .inner {max-width: var(--innerMo);}
+    #intro .s1 .imgArea {}
+    #intro .s1 .txtArea {}
+    #intro .s1 .txtArea .tit {font-size: 3.8rem;}
+    #intro .s1 .txtArea .wrt {font-size: 2.6rem;}
+    #intro .s2 {}
+    #intro .s2 .inner {padding: 12rem 0; max-width: var(--innerMo);}
+    #intro .s2 .lstArea {}
+    #intro .s2 .lstArea .lst {flex-direction: column; gap: 3rem}
+    #intro .s2 .lstArea .lst:nth-child(even) {flex-direction: column;}
+    #intro .s2 .lstArea .lst .img {width: 100%;}
+    #intro .s2 .lstArea .lst .txts {width: 100%;}
+    #intro .s2 .lstArea .lst .txts .subt {font-size: 2.6rem;}
+    #intro .s2 .lstArea .lst .txts .tit {font-size: 3.6rem;}
+    #intro .s2 .lstArea .lst .txts .wrt {font-size: 2.6rem;}
+    #intro .s3 {}
+    #intro .s3 .imgArea {}
+    #intro .s3 .txtArea {}
+    #intro .s3 .txtArea .tit {}
+    #intro .s3 .txtArea .tit .line {flex-direction: column;}
+    #intro .s3 .txtArea .tit .line span {width: 1px; height: 4rem;}
+    #intro .s3 .txtArea .btns {font-size: 2.2rem;}
+    #intro .s3 .txtArea .btns .linkBtn img {width: 1.6rem;}
 }
 
 

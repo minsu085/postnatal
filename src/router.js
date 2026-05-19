@@ -9,6 +9,11 @@ const routes = [
         children: [
             // 메인 페이지
             {path: '', name: 'main', component: () => import('@/views/Dashboard.vue'), meta: { title: '메인페이지' }},
+
+            // 산후조리원 소개
+            {path: 'intro', name: 'intro', component: () => import('@/views/intro/Intro.vue'), meta: { title: '조리원 소개' }},
+            {path: 'facility', name: 'facility', component: () => import('@/views/intro/Facility.vue'), meta: { title: '시설현황' }},
+            {path: 'direction', name: 'direction', component: () => import('@/views/intro/Direction.vue'), meta: { title: '오시는길' }},
             
             // 온라인 예약
             {path: 'reserv-list', name: 'reservList', component: () => import('@/views/reserv/ReservList.vue'), meta: { title: '예약하기' }},
