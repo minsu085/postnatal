@@ -690,11 +690,17 @@
 #baord .boardTable td.num {width: 9rem;}
 #baord .boardTable td.num .notc {font-weight: bold; color: var(--fc2);}
 #baord .boardTable td.subj {width: auto;}
-#baord .boardTable td.subj a {display: block; text-align: left; padding: 1.9rem 0;}
+#baord .boardTable td.subj a {display: block; text-align: left; padding: 1.9rem 2rem;}
 #baord .boardTable td.file {width: 15rem;}
 #baord .boardTable td.file img {}
 #baord .boardTable td.hits {width: 15rem;}
 #baord .boardTable td.date {width: 15rem;}
+
+#baord .boardTableB td.num {width: 9rem;}
+#baord .boardTableB td.subj {width: auto;}
+#baord .boardTableB td.subj .link {display: flex; align-items: center; gap: 1rem;}
+#baord .boardTableB td.user {width: 15rem;}
+#baord .boardTableB td.date {width: 15rem;}
 
 @media all and (max-width: 880px){
     #baord {}
@@ -753,6 +759,11 @@
 #boardView .fileArea .fileLst .opt {margin-right: 2rem;}
 #boardView .fileArea .fileLst img {}
 #boardView .fileArea .fileLst .file {padding-left: 1.2rem; color: #545454;}
+#boardView .answArea {border-top: 1px solid #999; border-bottom: 1px solid #999; margin-top: 5rem;}
+#boardView .answArea .titArea {padding: 1.5rem 2rem; background-color: #FAFAFA; border-bottom: 1px solid #E0E0E0;}
+#boardView .answArea .titArea .tit {}
+#boardView .answArea .titArea .date {}
+#boardView .answArea .anArea {padding: 2rem; min-height: 25rem;}
 #boardView .naviArea {margin-top: 8rem; border: 1px solid #797979; border-right: 0; border-left: 0;}
 #boardView .naviArea .naviLst {padding: 2.6rem 0; line-height: 1;}
 #boardView .naviArea .naviLst + .naviLst {border-top: 1px solid #E0E0E0;}
@@ -779,6 +790,11 @@
     #boardView .fileArea .fileLst .opt {}
     #boardView .fileArea .fileLst img {width: 2.4rem;}
     #boardView .fileArea .fileLst .file {}
+    #boardView .answArea {}
+    #boardView .answArea .titArea {}
+    #boardView .answArea .titArea .tit {font-size: 2.4rem;}
+    #boardView .answArea .titArea .date {font-size: 2.2rem;}
+    #boardView .answArea .anArea {font-size: 2.4rem;}
     #boardView .naviArea {font-size: 2.4rem;}
     #boardView .naviArea .naviLst {}
     #boardView .naviArea .naviLst .date {font-size: 2.2rem;}
@@ -826,7 +842,7 @@
 #boardWrite .infoLst .fileCon .btn-file {display: inline-block; padding: 1rem 2rem; border: 1px solid #999999; border-radius: 0.5rem; background-color: #fff; color: #212121; font-size: 1.6rem; cursor: pointer; vertical-align: middle; line-height: normal;}
 #boardWrite .infoLst .fileCon .fsubj {display: inline-block; margin-left: 1.5rem; vertical-align: middle;}
 #boardWrite .infoLst .fileCon .btn-del {margin-left: 1rem; padding: 0.4rem 0.8rem; border: 1px solid #dc3545; background-color: #fff; color: #dc3545; border-radius: 0.5rem; font-size: 1.2rem; cursor: pointer; vertical-align: middle;}
-#boardWrite .txtArea {min-height: 57rem; border: 1px solid #ccc;}
+#boardWrite .txtArea{}
 
 #boardWrite .botBtns {margin-top: 5rem; gap: 0.5rem;}
 #boardWrite .botBtns .mngBtns {gap: 1rem; margin-left: auto;}
@@ -849,7 +865,8 @@
     #boardWrite .infoLst .fileCon .btn-del {font-size: 2rem;}
     #boardWrite .txtArea {}
 
-    #boardWrite .botBtns {}
+    #boardWrite .botBtns {justify-content: center;}
+    #boardWrite .botBtns .mngBtns {margin: 0;}
     #boardWrite .botBtns .btn {font-size: 2.2rem; padding: 2.2rem 0; width: 16rem;}
     #boardWrite .botBtns .btnA {}
     #boardWrite .botBtns .btnB {}

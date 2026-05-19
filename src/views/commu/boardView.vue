@@ -34,11 +34,13 @@
                     <li><span>등록일</span> 2026-01-01</li>
                 </ul>
             </div>
+
             <div class="contArea">
                 공지사항 게시글 예시입니다.
                 <img src="/img/sub/view_temp_pc.jpg" alt="" class="temp pc">
                 <img src="/img/sub/view_temp_mo.jpg" alt="" class="temp mo">
             </div>
+
             <ul class="fileArea fs18">
                 <li class="fileLst flex alc">
                     <span class="opt">첨부파일</span>
@@ -46,6 +48,17 @@
                     <a href="#" class="file fc54" download>첨부파일.pdf (53.5KB)</a>
                 </li>
             </ul>
+
+            <div class="answArea">
+                <div class="titArea flex alc justy_btw">
+                    <div class="tit fs18">담당자 답변</div>
+                    <div class="date fs16 fc55">2025.01.01</div>
+                </div>
+                <div class="anArea fs18 fc33">
+                    문의사항에 답변드립니다.
+                </div>
+            </div>
+
             <ul class="naviArea fs18">
                 <li class="naviLst flex alc">
                     <span class="opt">이전글</span>
@@ -58,6 +71,7 @@
                     <span class="date fc55 fs16">2026-01-01</span>
                 </li>
             </ul>
+
             <div class="botBtns flex justy_cnt">
                 <div class="mngBtns flex">
                     <button type="button" class="btn btnA" @click="openModal">수정</button>

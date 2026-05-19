@@ -75,19 +75,28 @@
                 </li>
             </ul>
 
-            <div class="txtArea"></div>
+            <div class="txtArea">
+                <QuillEditor v-model:content="boardContent" contentType="html" theme="snow" toolbar="full"
+                    placeholder="내용을 작성해 주세요." />
+            </div>
 
             <div class="botBtns flex justy_cnt">
                 <div class="mngBtns flex">
                     <button type="button" class="btn btnA">취소</button>
                 </div>
-                <button type="button" class="btn btnB" @click="$router.push('/notice')">목록으로</button>
+                <button type="button" class="btn btnB">완료</button>
             </div>
 
         </div>
     </div>
 
 </template>
+
+<style scoped>
+:deep(.ql-container) {min-height: 57rem;}
+:deep(.ql-editor) {min-height: 57rem; font-size: 1.6rem; line-height: 1.5; }
+:deep(.ql-toolbar) {background-color: #f8f9fa;}
+</style>
 
 <script setup>
 import { ref } from 'vue';
@@ -112,4 +121,10 @@ const removeFile = () => {
         fileInput.value.value = '';
     }
 };
+
+import { QuillEditor } from '@vueup/vue-quill';
+import '@vueup/vue-quill/dist/vue-quill.snow.css'; 
+
+// 사용자가 에디터에 작성한 내용이 HTML 형태로 담길 변수
+const boardContent = ref('');
 </script>
