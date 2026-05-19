@@ -723,7 +723,7 @@
 #baord .gallLst:hover .subj {color: var(--fc2);}
 
 #baord .btnArea {text-align: right; margin-top: 5rem;}
-#baord .btnArea .wrtBtn {width: 12rem; text-align: center; padding: 1.2rem 0; border-radius: 0.5rem; font-weight: 500; font-family: inherit; border: 1px solid #BBBBBB;}
+#baord .btnArea .wrtBtn {width: 12rem; text-align: center; padding: 1.2rem 0; border-radius: 0.5rem; font-weight: 500; font-family: inherit; border: 1px solid #BBBBBB; display: inline-block;}
 #baord .btnArea .wrtBtn:hover {border: 1px solid #212121;}
 
 @media all and (max-width: 880px){
@@ -809,6 +809,50 @@
     .passModal .modalBox .ipt {}
     .passModal .modalBox .btns {font-size: 2.1rem;}
     .passModal .modalBox .btns .btn {width: 16rem; padding: 2.2rem 0;}
+}
+
+
+#boardWrite {}
+#boardWrite .infoLst {border-top: 1px solid #999999; border-bottom: 1px solid #999999; margin-bottom: 3rem;}
+#boardWrite .infoLst .lst {}
+#boardWrite .infoLst .lst + .lst {border-top: 1px solid #E0E0E0;}
+#boardWrite .infoLst .opt {min-width: 17rem; background-color: #F4F4F4; padding: 2.1rem 2rem; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center;}
+#boardWrite .infoLst .opt i {color: #E16565;}
+#boardWrite .infoLst .con {padding: 1.3rem 2rem; width: 100%;}
+#boardWrite .infoLst .con input[type='text'] {height: 4.4rem; width: 100%; max-width: 59.2rem; padding: 0 1.5rem; border: 1px solid #CCCCCC; color: #212121; font-size: 1.6rem; border-radius: 0.5rem;}
+#boardWrite .infoLst .con input[type='text']::placeholder {color: #797979;}
+#boardWrite .infoLst .fileCon {display: flex; align-items: center; flex-wrap: wrap;}
+#boardWrite .infoLst .fileCon .hidden-file {display: none;}
+#boardWrite .infoLst .fileCon .btn-file {display: inline-block; padding: 1rem 2rem; border: 1px solid #999999; border-radius: 0.5rem; background-color: #fff; color: #212121; font-size: 1.6rem; cursor: pointer; vertical-align: middle; line-height: normal;}
+#boardWrite .infoLst .fileCon .fsubj {display: inline-block; margin-left: 1.5rem; vertical-align: middle;}
+#boardWrite .infoLst .fileCon .btn-del {margin-left: 1rem; padding: 0.4rem 0.8rem; border: 1px solid #dc3545; background-color: #fff; color: #dc3545; border-radius: 0.5rem; font-size: 1.2rem; cursor: pointer; vertical-align: middle;}
+#boardWrite .txtArea {min-height: 57rem; border: 1px solid #ccc;}
+
+#boardWrite .botBtns {margin-top: 5rem; gap: 0.5rem;}
+#boardWrite .botBtns .mngBtns {gap: 1rem; margin-left: auto;}
+#boardWrite .botBtns .btn {font-size: 1.8rem; display: inline-block; padding: 1.7rem 0; border-radius: 0.5rem; font-family: inherit; line-height: 1; width: 15rem; text-align: center;}
+#boardWrite .botBtns .btnA {background: #fff; border: 1px solid #BBBBBB; color: #333}
+#boardWrite .botBtns .btnB {background: #554534; border: 1px solid #554534; color: #fff;}
+#boardWrite .botBtns .btnA:hover {color: #212121; border: 1px solid #212121;}
+#boardWrite .botBtns .btnB:hover {background: #1F1810; border: 1px solid #1F1810}
+
+@media all and (max-width: 880px){
+    #boardWrite {}
+    #boardWrite .infoLst {}
+    #boardWrite .infoLst .lst {}
+    #boardWrite .infoLst .opt {font-size: 2.4rem; min-width: 21rem;}
+    #boardWrite .infoLst .con {font-size: 2rem;}
+    #boardWrite .infoLst .con input[type='text'] {height: 5.5rem; font-size: 2rem;}
+    #boardWrite .infoLst .fileCon {}
+    #boardWrite .infoLst .fileCon .btn-file {font-size: 2rem; padding: 0.7rem 1.3rem;}
+    #boardWrite .infoLst .fileCon .fsubj {}
+    #boardWrite .infoLst .fileCon .btn-del {font-size: 2rem;}
+    #boardWrite .txtArea {}
+
+    #boardWrite .botBtns {}
+    #boardWrite .botBtns .btn {font-size: 2.2rem; padding: 2.2rem 0; width: 16rem;}
+    #boardWrite .botBtns .btnA {}
+    #boardWrite .botBtns .btnB {}
 }
 
 /**********페이징**********/

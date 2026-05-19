@@ -57,7 +57,7 @@
             </ul>
             
             <div class="btnArea">
-                <button class="wrtBtn fs16 fc33">글쓰기</button>
+                <router-link to="/board-write" class="wrtBtn fs16 fc33">글쓰기</router-link>
             </div>
 
             <div class="paging flex justy_cnt fs18 fc33">

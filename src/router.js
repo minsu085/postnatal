@@ -23,6 +23,7 @@ const routes = [
             {path: 'review', name: 'review', component: () => import('@/views/commu/review.vue'), meta: { title: '이용후기' }},
             {path: 'inquiry', name: 'inquiry', component: () => import('@/views/commu/inquiry.vue'), meta: { title: '문의하기' }},
             {path: 'board-view', name: 'boardView', component: () => import('@/views/commu/boardView.vue'), meta: { title: '게시판상세' }},
+            {path: 'board-write', name: 'boardWrite', component: () => import('@/views/commu/boardWrite.vue'), meta: { title: '게시판글쓰기' }},
         ],
     },
 
