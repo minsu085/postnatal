@@ -338,7 +338,9 @@
 }
 
 
-
+/*───────────────
+  서브공통
+─────────────────*/
 #subVisual {}
 #subVisual .bgImg {}
 #subVisual .txtArea {bottom: 19rem;}
@@ -374,6 +376,8 @@
 #contents2 .subTitle .menu {gap: 1rem;}
 
 @media all and (max-width: 880px){
+    #container {overflow: hidden;}
+
     #contents {max-width: var(--innerMo);}
     #contents .subTitle {}
     #contents .subTitle .title {font-size: 4rem;}
@@ -387,6 +391,9 @@
     #contents2 .subTitle .menu img {width: 1.8rem;}
 }
 
+/*───────────────
+  산후조리원 소개
+─────────────────*/
 #intro {}
 #intro .s1 {}
 #intro .s1 .inner {}
@@ -443,13 +450,13 @@
     #intro .s3 .txtArea .btns .linkBtn img {width: 1.6rem;}
 }
 
-/* --- [PC 기본 스타일] --- */
+
 #facility {}
 #facility .tab {gap: 1rem; margin-bottom: 4rem;}
 #facility .tab li {width: 12rem; padding: 0.9rem; text-align: center; background-color: #F4F4F4; border-radius: 5rem; cursor: pointer; }
 #facility .tab li.on {background-color: var(--fc2); color: #fff; font-weight: bold;}
-#facility .slideArea {gap: 4rem; display: flex; /* 가로 배치 필수 */}
 
+#facility .slideArea {gap: 4rem;}
 #facility .slideArea .facSwiper {width: 140rem; height: 76rem; overflow: hidden; border-radius: 0.5rem; flex-shrink: 0;}
 #facility .slideArea .facSwiper .slide {}
 #facility .slideArea .facSwiper .slide img {width: 100%; height: 100%; object-fit: cover;}
@@ -463,7 +470,7 @@
 #facility .slideArea .facThumb .slide::before {content: ''; display: block; position: absolute; width: 100%; height: 100%; border-radius: 0.5rem; border: 1px solid #F0F0F0; z-index: 1; box-sizing: border-box;}
 #facility .slideArea .facThumb .swiper-slide-thumb-active::before {content: ''; display: block; position: absolute; width: 100%; height: 100%; left: 0; top: 0; border-radius: 0.5rem; border: 0.4rem solid #A28362; z-index: 1; box-sizing: border-box;}
 
-#facility .txtArea {background-color: var(--fc2); padding: 3rem 4rem; border-radius: 0.5rem; margin-top: 4rem; display: flex; align-items: center; font-size: 2.6rem;}
+#facility .txtArea {background-color: var(--fc2); padding: 3rem 4rem; border-radius: 0.5rem; margin-top: 4rem; display: flex; align-items: center;}
 #facility .txtArea .tit {padding-right: 4rem; margin-right: 4rem; flex-shrink: 0;}
 #facility .txtArea .tit::before {content: ''; display: block; position: absolute; right: 0; height: 60%; width: 1px; background: #fff; transform: translateY(-50%); top: 50%;}
 #facility .txtArea .wrt {}
@@ -482,13 +489,176 @@
     #facility .slideArea .facNext {}
     #facility .slideArea .facThumb {width: 100%; height: 14.4rem;}
     #facility .slideArea .facThumb .slide {height: 100% !important;}
-
-    #facility .txtArea {}
+    #facility .txtArea {font-size: 2.6rem;}
     #facility .txtArea .tit {}
     #facility .txtArea .wrt {}
 }
 
+#direc {}
+#direc .inn {gap: 11rem}
+#direc .leftArea {width: 100rem;}
+#direc .leftArea .mapArea {width: 100%;}
+#direc .leftArea .mapArea iframe {}
+#direc .leftArea .snsArea {margin-top: 2rem; gap: 1.2rem}
+#direc .leftArea .snsArea .lst {width: 100%; border: 1px solid #E0E0E0; border-radius: 0.5rem; transition: 0.2s;}
+#direc .leftArea .snsArea .lst.naver:hover {border: 1px solid transparent; background-color: #E9F6EF;}
+#direc .leftArea .snsArea .lst.kakao:hover {border: 1px solid transparent; background-color: #F9F7E9;}
+#direc .leftArea .snsArea .lst.google:hover {border: 1px solid transparent; background-color: #EEF4FE;}
+#direc .leftArea .snsArea .lst a {padding: 1rem 2rem;}
+#direc .leftArea .snsArea .lst a img {width: 3.5rem;}
+#direc .leftArea .snsArea .lst a i {font-style: normal;}
+#direc .rightArea {}
+#direc .rightArea .infoLst {padding-left: 2.3rem}
+#direc .rightArea .infoLst::before {content: ''; display: block; position: absolute; width: 0.3rem; height: 2rem; background: var(--fc2); left: 0; top: 1.1rem;}
+#direc .rightArea .infoLst + .infoLst {margin-top: 7rem;}
+#direc .rightArea .infoLst .tit {padding-bottom: 1rem;}
+#direc .rightArea .infoLst .wrt {}
+#direc .rightArea .infoLst .prg {padding-top: 0.6rem;}
+#direc .direcBg {position: absolute; bottom: -34%; right: -9%;}
 
+@media all and (max-width: 880px){
+    #direc {}
+    #direc .inn {flex-direction: column; gap: 7rem}
+    #direc .leftArea {width: 100%;}
+    #direc .leftArea .mapArea {}
+    #direc .leftArea .mapArea iframe {}
+    #direc .leftArea .snsArea {font-size: 2.2rem; gap: 0.7rem}
+    #direc .leftArea .snsArea .lst {}
+    #direc .leftArea .snsArea .lst a {flex-direction: row-reverse; gap: 1.5rem; justify-content: center; padding: 2rem 0;}
+    #direc .leftArea .snsArea .lst a img {}
+    #direc .leftArea .snsArea .lst a i {display: none;}
+    #direc .rightArea {width: 100%;}
+    #direc .rightArea .infoLst {}
+    #direc .rightArea .infoLst::before {top: 1.7rem;}
+    #direc .rightArea .infoLst .tit {font-size: 4rem;}
+    #direc .rightArea .infoLst .wrt {font-size: 2.6rem;}
+    #direc .rightArea .infoLst .prg {font-size: 2.4rem;}
+    #direc .direcBg {width: 30.4rem; bottom: -19%;}
+}
+
+/*────────────
+  시설안내
+──────────────*/
+#place .titArea {margin-bottom: 5rem;}
+#place .titArea .subt {line-height: 1.7;}
+#place .titArea .tit {}
+#place .titArea .wrt {padding-top: 1.7rem;}
+
+#place .slideArea {gap: 4rem;}
+#place .slideArea .facSwiper {width: 140rem; height: 76rem; overflow: hidden; border-radius: 0.5rem; flex-shrink: 0;}
+#place .slideArea .facSwiper .slide {}
+#place .slideArea .facSwiper .slide img {width: 100%; height: 100%; object-fit: cover;}
+#place .slideArea .facNav {position: absolute; bottom: 0; width: 6rem; height: 6rem; z-index: 1; cursor: pointer;}
+#place .slideArea .facPrev {background: #473C30 url('../img/main/s3_prev.png') no-repeat center/cover; right: 6rem;}
+#place .slideArea .facNext {background: #51473C url('../img/main/s3_next.png') no-repeat center/cover; right: 0;}
+
+#place .slideArea .facThumb {width: 180px; height: 76rem;}
+#place .slideArea .facThumb .slide {cursor: pointer; border-radius: 0.5rem; overflow: hidden; height: calc((76rem - 40px) / 5) !important;}
+#place .slideArea .facThumb .slide img {width: 100%; height: 100%; object-fit: cover;}
+#place .slideArea .facThumb .slide::before {content: ''; display: block; position: absolute; width: 100%; height: 100%; border-radius: 0.5rem; border: 1px solid #F0F0F0; z-index: 1; box-sizing: border-box;}
+#place .slideArea .facThumb .swiper-slide-thumb-active::before {content: ''; display: block; position: absolute; width: 100%; height: 100%; left: 0; top: 0; border-radius: 0.5rem; border: 0.4rem solid #A28362; z-index: 1; box-sizing: border-box;}
+
+@media all and (max-width: 880px) {
+    #place .titArea {}
+    #place .titArea .subt {font-size: 2.6rem;}
+    #place .titArea .tit {font-size: 4rem;}
+    #place .titArea .wrt {font-size: 2.6rem;}
+
+    #place .slideArea {flex-direction: column; gap: 1rem;}
+    #place .slideArea .facSwiper {width: 100%; height: 37.5rem; min-height: 250px;}
+    #place .slideArea .facThumb {width: 100%; height: 14.4rem;}
+    #place .slideArea .facThumb .slide {height: 100% !important;}
+}
+
+/*────────────
+  이용안내
+──────────────*/
+#info {}
+#info .infoTit {margin-bottom: 3rem; padding-left: 1.4rem;}
+#info .infoTit::before {content: ''; display: block; position: absolute; width: 0.4rem; background-color: var(--fc2); height: 2.2rem; left: 0; top: 50%; transform: translateY(-50%);}
+
+#info.price .s1 {}
+#info.price .s1 .lstArea {gap: 2rem;}
+#info.price .s1 .lstArea .lst {background-color: #F4F4F4; border-radius: 0.5rem; width: 100%; padding: 3rem 4rem;}
+#info.price .s1 .lstArea .lst .tit {gap: 1rem}
+#info.price .s1 .lstArea .lst .tit img {width: 2.5rem;}
+#info.price .s1 .lstArea .lst .con {gap: 1rem}
+#info.price .s1 .lstArea .lst .con span {top: -0.2rem;}
+#info.price .s2 {margin-top: 10rem;}
+#info.price .s2 table {border-top: 1px solid #333333; border-bottom: 1px solid #333333;}
+#info.price .s2 table th {background-color: #FDFAF4; padding: 1.65rem 0; font-weight: 500;}
+#info.price .s2 table th.per {width: 28%; border-right: 1px solid #E0E0E0;}
+#info.price .s2 table th.targ {width: 72%;}
+#info.price .s2 table td {padding: 1.6rem 0; border: 1px solid #E0E0E0;}
+#info.price .s2 table td:first-child {border-left: 0;}
+#info.price .s2 table td:last-child {border-right: 0;}
+
+@media all and (max-width: 880px) {
+    #info {}
+    #info .infoTit {font-size: 3.4rem;}
+
+    #info.price .s1 {}
+    #info.price .s1 .lstArea {flex-direction: column;}
+    #info.price .s1 .lstArea .lst {}
+    #info.price .s1 .lstArea .lst .tit {font-size: 2.6rem;}
+    #info.price .s1 .lstArea .lst .tit img {}
+    #info.price .s1 .lstArea .lst .con {font-size: 3rem;}
+    #info.price .s1 .lstArea .lst .con span {font-size: 2.6rem;}
+    #info.price .s2 {}
+    #info.price .s2 table {font-size: 2.6rem;}
+    #info.price .s2 table th {}
+    #info.price .s2 table th.per {width: 36%;}
+    #info.price .s2 table th.targ {width: 64%;}
+    #info.price .s2 table td {padding: 1.5rem 2.5rem;}
+}
+
+#info.reserv .s1 {}
+#info.reserv .s1 .lstArea {padding: 3.6rem 4rem; background-color: #F4F4F4; border-radius: 0.5rem;}
+#info.reserv .s1 .lstArea .lst {padding-left: 1.4rem;}
+#info.reserv .s1 .lstArea .lst + .lst {margin-top: 0.8rem;}
+#info.reserv .s1 .lstArea .lst::before {content: ''; display: block; position: absolute; width: 0.4rem; height: 0.4rem; border-radius: 50%; background: var(--fc2); left: 0; top: 1.1rem;}
+#info.reserv .s2 {margin-top: 10rem;}
+#info.reserv .s2 .lstArea {gap: 2rem}
+#info.reserv .s2 .lstArea .lst {width: 100%; background-color: #F4F4F4; border-radius: 0.5rem; padding: 3.5rem 0; transition: 0.3s;}
+#info.reserv .s2 .lstArea .lst:before {content: ''; display: block; position: absolute; width: 100%; height: 100%; border-radius: 0.5rem; border: 1px solid var(--fc2); top: 0; transition: 0.3s; opacity: 0;}
+#info.reserv .s2 .lstArea .lst img {width: 6rem;}
+#info.reserv .s2 .lstArea .lst .tit {padding: 2.5rem 0 0.5rem;}
+#info.reserv .s2 .lstArea .lst .num {}
+
+#info.reserv .s2 .lstArea .lst:hover {background-color: #fff; box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.1);}
+#info.reserv .s2 .lstArea .lst:hover::before {opacity: 1;}
+
+@media all and (max-width: 880px) {
+    #info.reserv .s1 {}
+    #info.reserv .s1 .lstArea {padding: 3.6rem 3rem; font-size: 2.6rem;}
+    #info.reserv .s1 .lstArea .lst {padding-left: 1.6rem;}
+    #info.reserv .s1 .lstArea .lst::before {width: 0.6rem; height: 0.6rem; top: 1.5rem;}
+    #info.reserv .s2 {}
+    #info.reserv .s2 .lstArea {gap: 1rem}
+    #info.reserv .s2 .lstArea .lst {}
+    #info.reserv .s2 .lstArea .lst img {}
+    #info.reserv .s2 .lstArea .lst .tit {font-size: 2.4rem;}
+    #info.reserv .s2 .lstArea .lst .num {font-size: 2.6rem;}
+}
+
+#info.prep .s1 {gap: 4rem}
+#info.prep .s1 .panel {width: 100%;}
+#info.prep .s1 .lstArea {padding: 3.6rem 4rem; background-color: #F4F4F4; border-radius: 0.5rem;}
+#info.prep .s1 .lstArea .lst {padding-left: 1.4rem;}
+#info.prep .s1 .lstArea .lst + .lst {margin-top: 0.8rem;}
+#info.prep .s1 .lstArea .lst::before {content: ''; display: block; position: absolute; width: 0.4rem; height: 0.4rem; border-radius: 50%; background: var(--fc2); left: 0; top: 1.1rem;}
+
+@media all and (max-width: 880px) {
+    #info.prep .s1 {flex-direction: column; gap: 10rem}
+    #info.prep .s1 .panel {}
+    #info.prep .s1 .lstArea {font-size: 2.6rem; padding: 3.6rem 3rem;}
+    #info.prep .s1 .lstArea .lst {padding-left: 1.6rem}
+    #info.prep .s1 .lstArea .lst::before {width: 0.6rem; height: 0.6rem; top: 1.5rem}
+}
+
+/*────────────
+  온라인 예약
+──────────────*/
 #reserv {}
 #reserv .guidePanel {margin-bottom: 8rem;}
 #reserv .guideBox {}
@@ -783,7 +953,9 @@
 }
 
 
-/**********커뮤니티**********/
+/*────────────
+  커뮤니티
+──────────────*/
 #baord {}
 
 #baord .utilBar {background: #F4F4F4; padding: 2rem 3rem; margin-bottom: 3rem;}
@@ -984,7 +1156,9 @@
     #boardWrite .botBtns .btnB {}
 }
 
-/**********페이징**********/
+/*────────────
+  페이징
+──────────────*/
 .paging {gap: 1rem; margin-top: 8rem;}
 .paging .pg {width: 4rem; height: 4rem; border-radius: 0.5rem; display: grid; place-items: center;}
 .paging .pg.prev {width: 7.6rem; padding-left: 2.5rem; background: url('../img/sub/ic_pg_prev.svg') left 0.8rem center / 2rem 2rem no-repeat;}

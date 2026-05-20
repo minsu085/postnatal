@@ -101,9 +101,9 @@ const visualData = [
         bgPc: '/img/sub/sub_visual_05.jpg',
         bgMo: '/img/sub/sub_visual_05_mo.jpg',
         menus: [
-            { name: '공지사항', path: '/notice' },
-            { name: '이용후기', path: '/review' },
-            { name: '문의하기', path: '/inquiry' }
+            { name: '공지사항', path: '/notice', boardType: 'notice' },
+            { name: '이용후기', path: '/review', boardType: 'review' },
+            { name: '문의하기', path: '/inquiry', boardType: 'inquiry' }
         ],
         includePaths: ['/board-view', '/board-write']
     }
@@ -121,10 +121,21 @@ const currentVisual = computed(() => {
     return matchedGroup || visualData[0]; 
 });
 
+// --- 3. 메뉴 활성화 체크 함수(isMenuActive) 업데이트 ---
 const isMenuActive = (menu) => {
-    if (menu.activePaths) {
-        return menu.activePaths.includes(route.path);
+    // 1. 온라인 예약처럼 activePaths가 배열로 지정된 경우
+    if (menu.activePaths && menu.activePaths.includes(route.path)) {
+        return true;
     }
+    
+    // 2. 공통 게시판 페이지(/board-view, /board-write)에 진입한 경우
+    const commonBoardPaths = ['/board-view', '/board-write'];
+    if (commonBoardPaths.includes(route.path) && menu.boardType) {
+        // 주소창의 ?type= 값과 메뉴에 지정해둔 boardType이 같으면 on!
+        return route.query.type === menu.boardType;
+    }
+    
+    // 3. 그 외 기본 페이지들 (현재 주소 == 메뉴 주소)
     return route.path === menu.path;
 };
 </script>

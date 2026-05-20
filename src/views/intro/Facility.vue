@@ -53,8 +53,8 @@
                     :breakpoints="{
                         0: { 
                             direction: 'horizontal',
-                            slidesPerView: 3.5,
-                            spaceBetween: 10
+                            slidesPerView: 3.8,
+                            spaceBetween: 5
                         },
                         881: { 
                             direction: 'vertical',
