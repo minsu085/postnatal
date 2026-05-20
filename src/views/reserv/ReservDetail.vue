@@ -1,25 +1,6 @@
 <template>
 
-    <div id="subVisual">
-        <div class="bgImg">
-            <div class="img pc"><img src="/img/sub/sub_visual_04.jpg" alt=""></div>
-            <div class="img mo"><img src="/img/sub/sub_visual_04_mo.jpg" alt=""></div>
-        </div>
-        <div class="txtArea abs w100 inner1620 x_center fcf">
-            <div class="tit fs38 fwtbold">온라인 예약</div>
-            <div class="wrt fs20">
-                엄마와 아기의 소중한 시간을 위한<br class="mo"> 공공산후조리원 온라인 예약 서비스
-            </div>
-        </div>
-        <div class="menuArea abs w100 inner1620 x_center flex fs18 menu2">
-            <div class="menu">
-                <router-link to="/reserv-list">예약하기</router-link>
-            </div>
-            <div class="menu on">
-                <router-link to="/reserv-check">예약확인</router-link>
-            </div>
-        </div>
-    </div>
+    <SubVisual />
 
     <div id="contents" class="inner1620 m_center">
         <div class="subTitle flex alc justy_btw">
@@ -151,6 +132,8 @@
 </template>
 
 <script setup>
+import SubVisual from '@/components/SubVisual.vue'; 
+
 import { ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 

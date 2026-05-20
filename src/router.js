@@ -14,6 +14,18 @@ const routes = [
             {path: 'intro', name: 'intro', component: () => import('@/views/intro/Intro.vue'), meta: { title: '조리원 소개' }},
             {path: 'facility', name: 'facility', component: () => import('@/views/intro/Facility.vue'), meta: { title: '시설현황' }},
             {path: 'direction', name: 'direction', component: () => import('@/views/intro/Direction.vue'), meta: { title: '오시는길' }},
+
+            // 시설안내
+            {path: 'maternity', name: 'maternity', component: () => import('@/views/place/Maternity.vue'), meta: { title: '산모실' }},
+            {path: 'nursery', name: 'nursery', component: () => import('@/views/place/Nursery.vue'), meta: { title: '신생아실' }},
+            {path: 'lactation', name: 'lactation', component: () => import('@/views/place/Lactation.vue'), meta: { title: '모유수유실' }},
+            {path: 'wellness', name: 'wellness', component: () => import('@/views/place/Wellness.vue'), meta: { title: '헬스케어실' }},
+            {path: 'facilities', name: 'facilities', component: () => import('@/views/place/Facilities.vue'), meta: { title: '부대시설' }},
+
+            // 이용안내
+            {path: 'price', name: 'price', component: () => import('@/views/info/Price.vue'), meta: { title: '비용 안내' }},
+            {path: 'reservation', name: 'reservation', component: () => import('@/views/info/Reservation.vue'), meta: { title: '예약방법' }},
+            {path: 'preparation', name: 'preparation', component: () => import('@/views/info/Preparation.vue'), meta: { title: '준비사항' }},
             
             // 온라인 예약
             {path: 'reserv-list', name: 'reservList', component: () => import('@/views/reserv/ReservList.vue'), meta: { title: '예약하기' }},

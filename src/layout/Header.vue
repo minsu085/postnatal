@@ -91,11 +91,21 @@ const menuData = [
     },
     {
         title: '시설안내',
-        subMenus: [{ name: '산모실' }, { name: '신생아실' }, { name: '모유수유실' }, { name: '헬스케어실' }, { name: '부대시설' }]
+        subMenus: [
+            { name: '산모실', path: '/maternity' }, 
+            { name: '신생아실', path: '/nursery' }, 
+            { name: '모유수유실', path: '/lactation' }, 
+            { name: '헬스케어실', path: '/wellness' }, 
+            { name: '부대시설', path: '/facilities' }
+        ]
     },
     {
         title: '이용안내',
-        subMenus: [{ name: '비용 안내' }, { name: '예약방법' }, { name: '준비사항' }]
+        subMenus: [
+            { name: '비용 안내', path: '/price' }, 
+            { name: '예약방법', path: '/reservation' }, 
+            { name: '준비사항', path: '/preparation' }
+        ]
     },
     {
         title: '온라인 예약',
@@ -107,7 +117,7 @@ const menuData = [
     {
         title: '커뮤니티',
         subMenus: [
-            { name: '공지사항', path: '/notice'  }, 
+            { name: '공지사항', path: '/notice' }, 
             { name: '이용후기', path: '/review' }, 
             { name: '문의하기', path: '/inquiry' }
         ]
