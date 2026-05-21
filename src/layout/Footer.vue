@@ -3,22 +3,22 @@
         <div id="float" class="fixed flex column">
             <ul class="flst fs17 fwt500 fcf" :class="{ 'on': isFloatOpen }">
                 <li class="lst">
-                    <a href="#" class="flex alc">
+                    <router-link :to="{ name: 'facility' }" class="flex alc">
                         <img src="/img/ic_float_1.svg" alt="" />
                         시설현황
-                    </a>
+                    </router-link>
                 </li>
                 <li class="lst">
-                    <a href="#" class="flex alc">
+                    <router-link :to="{ name: 'reservCheck' }" class="flex alc">
                         <img src="/img/ic_float_2.svg" alt="" />
                         예약확인
-                    </a>
+                    </router-link>
                 </li>
                 <li class="lst">
-                    <a href="#" class="flex alc">
+                    <router-link :to="{ name: 'reservList' }" class="flex alc">
                         <img src="/img/ic_float_3.svg" alt="" />
                         예약하기
-                    </a>
+                    </router-link>
                 </li>
             </ul>
             <button type="button" class="fBtn g_center" :class="{ 'on': isFloatOpen }" @click="toggleFloatMenu">
@@ -34,21 +34,27 @@
                 <div class="menuArea flex alc justy_btw">
                     <ul class="menu flex fs17 fwt500">
                         <li>
-                            <a href="#">조리원 소개</a>
+                            <router-link :to="{ name: 'intro' }">조리원 소개</router-link>
                         </li>
                         <li>
-                            <a href="#">오시는 길</a>
+                            <router-link :to="{ name: 'direction' }">오시는 길</router-link>
                         </li>
                         <li>
-                            <a href="#">온라인 예약</a>
+                            <router-link :to="{ name: 'reservList' }">온라인 예약</router-link>
                         </li>
                         <li>
-                            <a href="#">이용약관</a>
+                            <a href="#" @click.prevent="isTermsOpen = true">이용약관</a>
                         </li>
                         <li>
-                            <a href="#">개인정보처리방침</a>
+                            <a href="#" @click.prevent="isPrivacyOpen = true">개인정보처리방침</a>
                         </li>
                     </ul>
+
+                    <Teleport to="body">
+                        <TermsModal v-if="isTermsOpen" @close="isTermsOpen = false" />
+                        <PrivacyModal v-if="isPrivacyOpen" @close="isPrivacyOpen = false" />
+                    </Teleport>
+
                     <div class="link fs18">
                         <a href="https://www.ycg.kr/open.content/ko/" target="_blank" class="flex alc">
                             예천군청 홈페이지 <img src="/img/ic_footer_link.svg" alt="" />
@@ -96,4 +102,10 @@ const scrollToTop = () => {
         behavior: 'smooth'
     });
 };
+
+import PrivacyModal from '@/components/PrivacyModal.vue';
+import TermsModal from '@/components/TermsModal.vue'; 
+
+const isPrivacyOpen = ref(false);
+const isTermsOpen = ref(false);
 </script>

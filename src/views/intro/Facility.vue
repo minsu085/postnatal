@@ -76,6 +76,8 @@
             </div>
         </div>
     </div>
+
+    <div id="facilityBg"></div>
 </template>
 
 <script setup>

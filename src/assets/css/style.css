@@ -470,11 +470,12 @@
 #facility .slideArea .facThumb .slide::before {content: ''; display: block; position: absolute; width: 100%; height: 100%; border-radius: 0.5rem; border: 1px solid #F0F0F0; z-index: 1; box-sizing: border-box;}
 #facility .slideArea .facThumb .swiper-slide-thumb-active::before {content: ''; display: block; position: absolute; width: 100%; height: 100%; left: 0; top: 0; border-radius: 0.5rem; border: 0.4rem solid #A28362; z-index: 1; box-sizing: border-box;}
 
-#facility .txtArea {background-color: var(--fc2); padding: 3rem 4rem; border-radius: 0.5rem; margin-top: 4rem; display: flex; align-items: center;}
+#facility .txtArea {background-color: var(--fc2); padding: 3rem 4rem; border-radius: 0.5rem; margin-top: 4rem; display: flex; align-items: center; z-index: 1;}
 #facility .txtArea .tit {padding-right: 4rem; margin-right: 4rem; flex-shrink: 0;}
 #facility .txtArea .tit::before {content: ''; display: block; position: absolute; right: 0; height: 60%; width: 1px; background: #fff; transform: translateY(-50%); top: 50%;}
 #facility .txtArea .wrt {}
 
+#facilityBg {height: 87rem; position: absolute; bottom: 0; width: 100%; background: #FFF; background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(242, 238, 229, 1) 100%);}
 
 @media all and (max-width: 880px){
     #facility {}
@@ -492,6 +493,8 @@
     #facility .txtArea {font-size: 2.6rem;}
     #facility .txtArea .tit {}
     #facility .txtArea .wrt {}
+
+    #facilityBg {}
 }
 
 #direc {}
@@ -1171,4 +1174,23 @@
     .paging .pg.prev {}
     .paging .pg.next {}
     .paging .pg.current {}
+}
+
+/*────────────
+  공통모달
+──────────────*/
+.modal {z-index: 9999;}
+.modal .modalBg {background: rgba(0, 0, 0, 0.7);}
+.modal .modalBox {background: #fff; width: 100%; max-width: 112rem; border-radius: 0.4rem; padding: 6rem;}
+.modal .modalBox .title {margin-bottom: 3rem;}
+.modal .modalBox .content {font-size: 1.4rem; color: #555; padding: 2rem; border: 1px solid #D9D9D9; height: 40rem; overflow-y: auto; border-radius: 0.4rem;}
+.modal .modalBox .closeBtn {top: 2rem; right: 2rem; width: 2rem;}
+
+@media all and (max-width: 880px){
+    .modal {}
+    .modal .modalBg {}
+    .modal .modalBox {max-width: var(--innerMo);}
+    .modal .modalBox .title {font-size: 3.4rem;}
+    .modal .modalBox .content {font-size: 2rem; height: 60rem;}
+    .modal .modalBox .closeBtn {width: 3.2rem;}
 }
